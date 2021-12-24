@@ -74,4 +74,40 @@ duzina = ime.lenght;
 console.log(duzina);     // .log daje duzinu stringa
 */
 
-console.log(11 < 2);
+/* treci cas
+----------------------------------------------------------------------------------
+p = "Jasarovic";
+a = prompt("Unesi ime");
+console.log("Uppercase ime je " + a.toUpperCase());
+console.log("Lowercase ime je " + a.toLowerCase());
+console.log(a.includes("a"));
+console.log(a.concat(p));
+console.log(a.indexOf("e"));
+console.log(a.concat(p).slice(7, 13)); // ako se koriste - vrednosti npr -1 je prvi karakter sa kraja stringa
+console.log(a.replace("Medzid", "Masina"));
+text = "masina,kukurek,oreo,Cazim,kakoolol";
+console.log(text.split(","));
+console.log(
+  `Ovo je neki broj ${
+    3 - 4 - 113 + 1223 * 2 - 1111
+  } i to je uradjeno poput backtexta`
+);
+  
+ 
+
+
+a = prompt("Unesite svoju sifru");
+b = prompt("Ponovite svoju sifru");
+if (a == b) {
+  console.log("Uneli ste tacnu sifru");
+} else {
+  console.log("Uneta sifra nije tacna");
+}
+
+*/
+b = prompt("Unesite broj izmedju 1 i 10");
+if (b >= 1 && b <= 10) {
+  console.log("Tacno masino");
+} else {
+  console.log("Netacno gr");
+}
