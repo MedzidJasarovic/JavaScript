@@ -104,10 +104,23 @@ if (a == b) {
   console.log("Uneta sifra nije tacna");
 }
 
-*/
+
+
 b = prompt("Unesite broj izmedju 1 i 10");
 if (b >= 1 && b <= 10) {
   console.log("Tacno masino");
 } else {
   console.log("Netacno gr");
+}
+
+*/
+
+//zadatak od 2 intedzera izbaci veci
+
+b = prompt("Ubaci prvi broj");
+a = prompt("Unesi drugi broj");
+if (a > b) {
+  console.log("veci je", a);
+} else {
+  console.log("veci je", b);
 }
