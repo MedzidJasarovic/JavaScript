@@ -10,7 +10,7 @@ brojgodina=prompt("Unesite broj godina")
 brojmeseci=parseInt(brojgodina)*365;
 brojdana=parseInt(brojgodina)*365;
 console.log("U",brojgodina,"godina ima",brojmeseci,"meseci i",brojdana,"dana");
-/* domakkiiii odgeldaj tuki
+
 
 */
 //----------------------------------------------------------------------------------
@@ -67,8 +67,11 @@ console.log(parseInt(broj1) < parseInt(broj2));
 b1 = prompt("Unesi broj");
 console.log(parseInt(b1) % 2 == 0);
 
-*/
+
 
 ime = prompt("unesite vase ime");
 duzina = ime.lenght;
-console.log(duzina);
+console.log(duzina);     // .log daje duzinu stringa
+*/
+
+console.log(11 < 2);
