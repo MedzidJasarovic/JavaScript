@@ -74,6 +74,8 @@ console.log(parseInt(b1) % 2 == 0);
 ime = prompt("unesite vase ime");
 duzina = ime.lenght;
 console.log(duzina);     // .log daje duzinu stringa
+
+
 */
 
 /* TRECI CAS (MANIPULACIJA STRINGOVIMA)
@@ -143,6 +145,7 @@ else()
 //---------------------------------------------------------------------------
 //  JAVA SCRIPT 4. CAS
 
+/*
 a = 10;
 
 if (a >= 10) {
@@ -155,3 +158,27 @@ if (a >= 10) {
 }
 
 console.log("Posle if-a");
+
+
+
+if()
+
+  else if()         sve je jedan blok
+     
+    else()
+
+    */
+//5 11 jutro 11 18 dan 18 20 vece 20 5 Notification
+
+a = prompt("Unesi koliko je sati (samo sate!!!!)");
+if (a >= 5 && a <= 11) {
+  console.log("Sad je jutro");
+} else if (a > 11 && a < 18) {
+  console.log("Sad je dan");
+} else if (a > 18 && 20) {
+  console.log("Sad je vece");
+} else if ((a > 20 && 24) || (a > 0 && a < 5)) {
+  console.log("Sad je noc");
+} else {
+  console.log("Uneli ste pogresan broj");
+}
