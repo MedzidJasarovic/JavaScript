@@ -38,6 +38,26 @@ let rezultat = slova.length; //dobijanje duzine niza
 let odabranoslovo=slova[5]//pristupanje clana niza po indeksu
 
 let imeee = Imena.ime; // uzimanje vrednosti kljuca iz objekta
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 */
 
 // 2 CAS   (BOOLEAN OPERATORI)------------------------------------------------------------------------------
@@ -75,6 +95,30 @@ ime = prompt("unesite vase ime");
 duzina = ime.lenght;
 console.log(duzina);     // .log daje duzinu stringa
 
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 
 */
 
@@ -139,6 +183,24 @@ else()
 {
   console.log("Niste uneli dobro brojeve gr")
 }
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 
 */
 
@@ -168,8 +230,16 @@ if()
     else()
 
     */
-//5 11 jutro 11 18 dan 18 20 vece 20 5 Notification
 
+//5 11 jutro 11 18 dan 18 20 vece 20 5 Noc   ZADATAK GRRRRRR
+/*
+|
+|
+|
+|
+|
+|
+|
 a = prompt("Unesi koliko je sati (samo sate!!!!)");
 if (a >= 5 && a <= 11) {
   console.log("Sad je jutro");
@@ -181,4 +251,15 @@ if (a >= 5 && a <= 11) {
   console.log("Sad je noc");
 } else if (a > 24 || a < 0) {
   console.log("Uneli ste pogresan broj");
+
+
+  // sve ovo moze prakticnije
+
+  1.zadatak ocena i bodovi
+  2.da li je moguc trougao od datih stranice
 }
+
+*/
+
+a = prompt("Unesi broj");
+console.log("a je a=", a);
