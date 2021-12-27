@@ -179,6 +179,6 @@ if (a >= 5 && a <= 11) {
   console.log("Sad je vece");
 } else if ((a > 20 && 24) || (a > 0 && a < 5)) {
   console.log("Sad je noc");
-} else {
+} else if (a > 24 || a < 0) {
   console.log("Uneli ste pogresan broj");
 }
