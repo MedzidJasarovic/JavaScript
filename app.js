@@ -1,3 +1,5 @@
+// PRVI CAS-----------------------------------------------------------
+
 /* broj1 = prompt("Unesi prvi broj,trazi daris ");
 broj2 = prompt("Unesi drugi broj, trazi daris ");
 broj3 = parseInt(broj1) + parseInt(broj2);
@@ -38,7 +40,7 @@ let odabranoslovo=slova[5]//pristupanje clana niza po indeksu
 let imeee = Imena.ime; // uzimanje vrednosti kljuca iz objekta
 */
 
-// 2 cas ------------------------------------------------------------------------------
+// 2 CAS   (BOOLEAN OPERATORI)------------------------------------------------------------------------------
 
 /*null  - rezervisano mesto u memoriji bez brednosti
  = uzima vrednost
@@ -74,7 +76,7 @@ duzina = ime.lenght;
 console.log(duzina);     // .log daje duzinu stringa
 */
 
-/* treci cas
+/* TRECI CAS (MANIPULACIJA STRINGOVIMA)
 ----------------------------------------------------------------------------------
 p = "Jasarovic";
 a = prompt("Unesi ime");
@@ -113,14 +115,43 @@ if (b >= 1 && b <= 10) {
   console.log("Netacno gr");
 }
 
-*/
+    
 
 //zadatak od 2 intedzera izbaci veci
+*/
 
+/*
 b = prompt("Ubaci prvi broj");
 a = prompt("Unesi drugi broj");
 if (a > b) {
   console.log("veci je", a);
-} else {
+} 
+if(a<b) {
   console.log("veci je", b);
 }
+if(a=b)
+{
+  console.log("jednaki su")
+}
+else()
+{
+  console.log("Niste uneli dobro brojeve gr")
+}
+
+*/
+
+//---------------------------------------------------------------------------
+//  JAVA SCRIPT 4. CAS
+
+a = 10;
+
+if (a >= 10) {
+  console.log("A je vece ili jednako 10");
+  console.log("A je vece ili jednako 10");
+  console.log("A je vece ili jednako 10");
+  console.log("A je vece ili jednako 10");
+  console.log("A je vece ili jednako 10");
+  console.log("A je vece ili jednako 10");
+}
+
+console.log("Posle if-a");
