@@ -259,7 +259,8 @@ if (a >= 5 && a <= 11) {
   2.da li je moguc trougao od datih stranice
 }
 
-*/
+
 
 a = prompt("Unesi broj");
 console.log("a je a=", a);
+*/
