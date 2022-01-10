@@ -94,14 +94,53 @@ if (cer === rec) {
   console.log("Nije palinda");
 }
 
-*/ faktorijal = 1;
+-------------------------------------------------------------------------------------------------------------------- */
+//Nadji zbir faktorijala  unetog broja, npr 5 -> 1 + 1*2 + 1*2*3 + 1*2*3*4 + 1*2*3*4*5
+/*
+
+faktorijal = 1;
 faktorijalsumm = 0;
 a = prompt("Unesite broj");
 
 for (i = 1; i <= a; i++) {
-  console.log(i);
   faktorijal *= i;
   faktorijalsumm += faktorijal;
 }
 
 console.log(faktorijalsumm);
+
+//Drugi nacin
+a = 6;
+for (i = 1; i <= a; i++) {
+  fakt = 1;
+  for (j = a; j <= i; j++) {
+    fakt = fakt * j;
+  }
+  console.log(fakt);
+}
+
+ //ispisuje ti kul tablicu mnozenja, probaj i videces
+for (j = 1; j <= 10; j++) {
+  red = "";
+  for (i = 1; i <= 10; i++) {
+    red += `${i * j} \t`;
+  }
+  console.log(red);
+}
+*/
+negativna = 0;
+ncounter = 0;
+pozitivna = 0;
+pcounter = 0;
+for (i = 1; i <= 10; i++) {
+  temperatura = parseInt(prompt("Unesi temperaturu za:" + i + " dan"));
+  if (temperatura < 0) {
+    negativna += temperatura;
+    ncounter++;
+  } else if (temperatura > 0) {
+    pozitivna += temperatura;
+    pcounter++;
+  }
+}
+console.log("Prosecna pozitivna je: " + pozitivna / pcounter);
+console.log("Prosecna negativna je: " + negativna / ncounter);
