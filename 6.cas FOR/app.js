@@ -80,7 +80,6 @@ for (i = 0; i < ponavljanje; i++) {
   console.log(zvezda);
 }
 
-*/
 
 rec = prompt(
   "Unesite vi neku kao rec ili recenicu  i  ja ti kazem da li je palinda ili nije palida lolz"
@@ -94,3 +93,15 @@ if (cer === rec) {
 } else {
   console.log("Nije palinda");
 }
+
+*/ faktorijal = 1;
+faktorijalsumm = 0;
+a = prompt("Unesite broj");
+
+for (i = 1; i <= a; i++) {
+  console.log(i);
+  faktorijal *= i;
+  faktorijalsumm += faktorijal;
+}
+
+console.log(faktorijalsumm);

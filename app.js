@@ -272,7 +272,7 @@ console.log("a je a=", a);
 //   console.log(unos[i]);
 // }
 
-
+/*
 
 zvezda = "";
 ponavljanje = prompt("Unesite broj redova zvezdaranja");
@@ -289,8 +289,10 @@ for(i=0;i<ponavljanje;i++)
 
 
 
-/*
+
 for (i = 0; i < ponavljanje; i++) {
   zvezda += " * ";
   console.log(zvezda);
 }
+
+*/
