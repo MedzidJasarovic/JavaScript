@@ -65,9 +65,32 @@ for (i = 0; i < rec.length; i++) {
   console.log(rec[i]);
 }
 
-*/
+
 for (i = 1; i <= 10; i++) {
   for (j = 1; j <= 10; j++) {
     console.log(" " + i + " * " + j + " = " + j * i);
   }
+}
+
+zvezda = "";
+// ponavljanje = prompt("Unesite broj redova zvezdaranja");
+ponavljanje = 5;
+for (i = 0; i < ponavljanje; i++) {
+  zvezda += " * ";
+  console.log(zvezda);
+}
+
+*/
+
+rec = prompt(
+  "Unesite vi neku kao rec ili recenicu  i  ja ti kazem da li je palinda ili nije palida lolz"
+);
+cer = "";
+for (i = rec.length - 1; i >= 0; i--) {
+  cer += rec[i];
+}
+if (cer === rec) {
+  console.log("Jeste palindaaa");
+} else {
+  console.log("Nije palinda");
 }

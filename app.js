@@ -264,7 +264,15 @@ if (a >= 5 && a <= 11) {
 a = prompt("Unesi broj");
 console.log("a je a=", a);
 */
-unos = prompt("Unesi rec");
-for (i = 1; i < unos.lenght; i++) {
-  console.log(unos[i]);
+// unos = prompt("Unesi rec");
+// for (i = 1; i < unos.lenght; i++) {
+//   console.log(unos[i]);
+// }
+
+zvezda = "";
+// ponavljanje = prompt("Unesite broj redova zvezdaranja");
+ponavljanje = 5;
+for (i = 0; i < ponavljanje; i++) {
+  zvezda += " * ";
+  console.log(zvezda);
 }
