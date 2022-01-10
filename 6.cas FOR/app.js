@@ -58,9 +58,16 @@ samo koristi *=
 
 
 --------------------------------------------------------------------------Vezbanje-------------------------------------------------------------
-*/
+
 rec = prompt("Unesi rec gosn");
 for (i = 0; i < rec.length; i++) {
   // PISE SE LENGTH alo
   console.log(rec[i]);
+}
+
+*/
+for (i = 1; i <= 10; i++) {
+  for (j = 1; j <= 10; j++) {
+    console.log(" " + i + " * " + j + " = " + j * i);
+  }
 }
