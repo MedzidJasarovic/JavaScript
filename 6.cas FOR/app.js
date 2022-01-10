@@ -60,6 +60,7 @@ samo koristi *=
 --------------------------------------------------------------------------Vezbanje-------------------------------------------------------------
 */
 rec = prompt("Unesi rec gosn");
-for (i = 0; i < rec.lenght; i++) {
+for (i = 0; i < rec.length; i++) {
+  // PISE SE LENGTH alo
   console.log(rec[i]);
 }
