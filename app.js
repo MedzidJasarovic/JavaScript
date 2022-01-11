@@ -295,4 +295,40 @@ for (i = 0; i < ponavljanje; i++) {
   console.log(zvezda);
 }
 
+
+text1 = "Ovoj je prvi tekst";
+text2 = "Ovo je druggi text";
+console.log(text1.concat(text2));
+
+text1 = "Ovo je kao neka moja recenica";
+n = text1.split(" ");              //deli text kad nadje space
+for (i = 0; i < n.length; i++) {
+  console.log(n[i]);
+}
+
+text1 = "Tekst";
+for (i = 0; i < 5; i++) {
+  console.log(text1);
+}
+
+niz = [1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15, 16, 17, 18, 12, 5000, 6900, 69]; // ispisuje samo elemente niza deljive sa 5
+for (i = 0; i < niz.length; i++) {
+  if (niz[i] % 5 == 0) {
+    console.log(niz[i]); 
+  }
+}
+
+summ = 0;
+niz = [1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15, 16, 17, 18, 12, 5000, 6900, 69]; // izracunava zbir svih clanova niza
+for (i = 0; i < niz.length; i++) {
+  summ += niz[i];
+}
+console.log(summ);
 */
+function saberi() {
+  a = prompt("Unesite prvi broj");
+  b = prompt("Unesite drugi broj"); //kreirannje fukcije koja izracunava proizvod dva uneta broja
+  summ = a * b;
+  console.log(summ);
+}
+saberi();
