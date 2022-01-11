@@ -332,14 +332,29 @@ function saberi() {
   console.log(summ);
 }
 saberi();
-*/
+
 broj = prompt("Unesite broj koji zelite da pretvorite");
 function pretvori(broj) {
-  if (broj == 0) {
-    console.log("Uneti broj je nula i ne moze mu se menjati znak");
+  if (broj == 0) { 
+    console.log("Uneti broj je nula i ne moze mu se menjati znak");           //Zadatak menja znak unetog broja
   } else {
     pretvoren = broj * -1;
   }
   console.log(pretvoren);
 }
 pretvori(broj);
+*/
+function napisi() {
+  tekst = prompt("Unesite tekst koji zelite da se ispise");
+  ponavljanje = prompt("Unesite broj ponavljanja teksta");
+  if (tekst == "") {
+    console.log("Niste uneli tekst");
+  }
+  if (ponavljanje <= 0) {
+    console.log("Unesite pozitivan broj ponavljanja");
+  }
+  for (i = 0; i < ponavljanje; i++) {
+    console.log(tekst);
+  }
+}
+napisi();
