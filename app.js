@@ -324,7 +324,7 @@ for (i = 0; i < niz.length; i++) {
   summ += niz[i];
 }
 console.log(summ);
-*/
+
 function saberi() {
   a = prompt("Unesite prvi broj");
   b = prompt("Unesite drugi broj"); //kreirannje fukcije koja izracunava proizvod dva uneta broja
@@ -332,3 +332,14 @@ function saberi() {
   console.log(summ);
 }
 saberi();
+*/
+broj = prompt("Unesite broj koji zelite da pretvorite");
+function pretvori(broj) {
+  if (broj == 0) {
+    console.log("Uneti broj je nula i ne moze mu se menjati znak");
+  } else {
+    pretvoren = broj * -1;
+  }
+  console.log(pretvoren);
+}
+pretvori(broj);
