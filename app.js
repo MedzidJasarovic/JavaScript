@@ -295,13 +295,13 @@ for (i = 0; i < ponavljanje; i++) {
   console.log(zvezda);
 }
 
-
+//deli text kad nadje space
 text1 = "Ovoj je prvi tekst";
 text2 = "Ovo je druggi text";
 console.log(text1.concat(text2));
 
 text1 = "Ovo je kao neka moja recenica";
-n = text1.split(" ");              //deli text kad nadje space
+n = text1.split(" ");              
 for (i = 0; i < n.length; i++) {
   console.log(n[i]);
 }
@@ -310,14 +310,14 @@ text1 = "Tekst";
 for (i = 0; i < 5; i++) {
   console.log(text1);
 }
-
-niz = [1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15, 16, 17, 18, 12, 5000, 6900, 69]; // ispisuje samo elemente niza deljive sa 5
+// ispisuje samo elemente niza deljive sa 5
+niz = [1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15, 16, 17, 18, 12, 5000, 6900, 69]; 
 for (i = 0; i < niz.length; i++) {
   if (niz[i] % 5 == 0) {
     console.log(niz[i]); 
   }
 }
-
+// izracunava zbir svih clanova niza
 summ = 0;
 niz = [1, 2, 3, 4, 5, 6, 8, 12, 13, 14, 15, 16, 17, 18, 12, 5000, 6900, 69]; // izracunava zbir svih clanova niza
 for (i = 0; i < niz.length; i++) {
@@ -325,6 +325,7 @@ for (i = 0; i < niz.length; i++) {
 }
 console.log(summ);
 
+//kreirannje fukcije koja izracunava proizvod dva uneta broja
 function saberi() {
   a = prompt("Unesite prvi broj");
   b = prompt("Unesite drugi broj"); //kreirannje fukcije koja izracunava proizvod dva uneta broja
@@ -333,6 +334,7 @@ function saberi() {
 }
 saberi();
 
+  //Zadatak menja znak unetog broja
 broj = prompt("Unesite broj koji zelite da pretvorite");
 function pretvori(broj) {
   if (broj == 0) { 
@@ -343,7 +345,8 @@ function pretvori(broj) {
   console.log(pretvoren);
 }
 pretvori(broj);
-*/
+//Zadatak od korisnika uzima tekst i broj ponavljanja teksta i tako ga ispisuje
+
 function napisi() {
   tekst = prompt("Unesite tekst koji zelite da se ispise");
   ponavljanje = prompt("Unesite broj ponavljanja teksta");
@@ -351,10 +354,30 @@ function napisi() {
     console.log("Niste uneli tekst");
   }
   if (ponavljanje <= 0) {
-    console.log("Unesite pozitivan broj ponavljanja");
+    console.log("Unesite pozitivan broj ponavljanja"); //Zadatak od korisnika uzima tekst i broj ponavljanja teksta i tako ga ispisuje
   }
   for (i = 0; i < ponavljanje; i++) {
     console.log(tekst);
   }
 }
 napisi();
+// shit zadatak
+
+for (i = 1; i <= 10; i++) {
+  console.log(i + " kvadriran~" + i * i); //shit zadatak
+}
+
+// pise piramidu pomocu zvezda
+counter = "";
+for (i = 0; i < 10; i++) {
+  counter += " *";
+  console.log(counter); //pise piramidu pomocu zvezda
+}
+*/
+for (i = 1; i <= 10; i++) {
+  if (i % 2 == 0) {
+    console.log(i + " ovaj broj je paran");
+  } else {
+    console.log(i + " Ovaj broj je neparan");
+  }
+}
