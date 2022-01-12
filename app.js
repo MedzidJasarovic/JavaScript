@@ -373,7 +373,7 @@ for (i = 0; i < 10; i++) {
   counter += " *";
   console.log(counter); //pise piramidu pomocu zvezda
 }
-*/
+
 for (i = 1; i <= 10; i++) {
   if (i % 2 == 0) {
     console.log(i + " ovaj broj je paran");
@@ -381,3 +381,6 @@ for (i = 1; i <= 10; i++) {
     console.log(i + " Ovaj broj je neparan");
   }
 }
+*/
+a = prompt("Unesite vrednost", "");
+alert(a);
