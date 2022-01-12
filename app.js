@@ -381,6 +381,24 @@ for (i = 1; i <= 10; i++) {
     console.log(i + " Ovaj broj je neparan");
   }
 }
-*/
+
 a = prompt("Unesite vrednost", "");
 alert(a);
+*/ niz = [0, 0, 0, 0, 0, 0, 0];
+a = prompt("Unesite broj sa kojim uporedjujete");
+summ = 0;
+for (i = 0; i < niz.length; i++) {
+  if (a > niz[i]) {
+    console.log(niz[i]);
+  } else {
+    console.log("0");
+  }
+  summ += niz[i];
+}
+if (summ == 0) {
+  console.log(" vrednost vaseg niza je 0");
+} else {
+  console.log(
+    summ + " je vrednost niza a " + summ / i + " je njegova aritmeticka sredina"
+  );
+}
