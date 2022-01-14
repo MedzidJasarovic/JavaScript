@@ -419,3 +419,7 @@ function gg(p1, p2) {
 gg(p1, p2);
 
 //const gg = (p1, p2) =>{} //arrow function
+
+console.log(NaN === NaN);
+console.log(true + true + false);
+console.log(0.1 + 0.2 === 0.3);
