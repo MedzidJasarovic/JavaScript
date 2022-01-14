@@ -23,13 +23,28 @@ while (a.toUpperCase() !== "END") {
   a = prompt("Nastavi da unosis onda ..."); //////////////////////////////////////////////////////////TRAZI IME DOK NE UNESES END, ISPISUJE SVA IMENA
 }
 console.log("Gotovo");
-*/ summ = 0;
+
+
+
+summ = 0;
 brojac = 0;
 a = parseInt(prompt("Unesite ocenu"));
 while (a >= 1 && a <= 5) {
   summ += a;
   brojac++;
-  a = parseInt(prompt("Unesite sledecu ocenu"));
+  a = parseInt(prompt("Unesite sledecu ocenu"));///////////////////////////////////////TRAZI OCENU I RACINA A.SREDINU SVE DOK SE NE UNESE POGRESNA OCENA
 }
-sredina = summ / brojac;
-console.log(sredina);
+
+console.log(summ / broja);
+*/
+a = parseInt(prompt("Unesite broj"));
+br = Math.round(Math.random()) * 10;
+while (a !== br) {
+  if (a < br) {
+    alert("Trazeni broj  je veci");
+  } else if (a > br) {
+    alert("Trazeni broj je manji");
+  }
+  a = parseInt(prompt("Unesite ponovo broj"));
+}
+console.log("Cestitam pogodili ste , trazeni broj je :" + br);

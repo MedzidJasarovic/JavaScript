@@ -144,4 +144,4 @@ for (i = 1; i <= 10; i++) {
 }
 console.log("Prosecna pozitivna je: " + pozitivna / pcounter);
 console.log("Prosecna negativna je: " + negativna / ncounter);
-
+*/
