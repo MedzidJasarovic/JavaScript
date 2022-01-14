@@ -384,7 +384,9 @@ for (i = 1; i <= 10; i++) {
 
 a = prompt("Unesite vrednost", "");
 alert(a);
-*/ niz = [0, 0, 0, 0, 0, 0, 0];
+// UPOREDJIVANJE BROJA SA NIZOM
+
+ niz = [0, 0, 0, 0, 0, 0, 0];
 a = prompt("Unesite broj sa kojim uporedjujete");
 summ = 0;
 for (i = 0; i < niz.length; i++) {
@@ -399,6 +401,21 @@ if (summ == 0) {
   console.log(" vrednost vaseg niza je 0");
 } else {
   console.log(
-    summ + " je vrednost niza a " + summ / i + " je njegova aritmeticka sredina"
+    summ + " je vrednost niza a " + summ / i + " je njegova aritmeticka sredina" // UPOREDJIVANJE BROJA SA NIZOM
   );
 }
+*/
+p1 = "scissors";
+p2 = "rock";
+function gg(p1, p2) {
+  if (p1 === p2) {
+    console.log("Draw!");
+  } else if (p1 === "scissors" && p2 === "paper") {
+    console.log("Player 1 won!");
+  } else if (p1 === "scissors" && p2 === "rock") {
+    console.log("Player 2 won!");
+  }
+}
+gg(p1, p2);
+
+//const gg = (p1, p2) =>{} //arrow function
