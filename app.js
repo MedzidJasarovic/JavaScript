@@ -354,7 +354,7 @@ function napisi() {
     console.log("Niste uneli tekst");
   }
   if (ponavljanje <= 0) {
-    console.log("Unesite pozitivan broj ponavljanja"); //Zadatak od korisnika uzima tekst i broj ponavljanja teksta i tako ga ispisuje
+    console.log("Unesite pozitivan broj ponavljanja"); /////////////Zadatak od korisnika uzima tekst i broj ponavljanja teksta i tako ga ispisuje
   }
   for (i = 0; i < ponavljanje; i++) {
     console.log(tekst);
@@ -404,7 +404,7 @@ if (summ == 0) {
     summ + " je vrednost niza a " + summ / i + " je njegova aritmeticka sredina" // UPOREDJIVANJE BROJA SA NIZOM
   );
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ZADATAK SA CODEWARS
 p1 = "scissors";
 p2 = "rock";
 function gg(p1, p2) {
@@ -423,7 +423,7 @@ gg(p1, p2);
 console.log(NaN === NaN);
 console.log(true + true + false);
 console.log(0.1 + 0.2 === 0.3);
-*/
+//////////////////////////////////////////////////////////////////////ZADATAK SA CODEWARS
 numbers = [1, 2, 3];
 function squareSum(numbers) {
   summ = 0;
@@ -433,3 +433,40 @@ function squareSum(numbers) {
 
   return summ;
 }
+
+//
+// summ = 0;
+
+// for (i = 0; i < 15; i++) {
+//   if (i < 0) {
+//     i = 1;
+//   }
+//   imanje = i - 1;
+
+//   summ += imanje + i;
+//   console.log(summ);
+// }
+
+let a = 1; /////////////////////////////////////////////////////////FIBONACIJEV NIZ
+let b = 1;
+let c = 0;
+
+while (true) {
+  c = b;
+  b = a + c;
+  a = c;
+  console.log(b);
+  if (b > 100) {
+    break;
+  }
+}
+niz = [1, 2, 3];
+
+niz.push(4);
+let br = niz.shift();
+niz.splice(1, 2, "novi el");
+niz.unshift(3);///////////////////////////////////////////////////////////////////////////////////////////////////////////NIZ MANIPULACIJA
+niz.slice(1, 3);
+console.log(niz);
+console.log(br);
+*/

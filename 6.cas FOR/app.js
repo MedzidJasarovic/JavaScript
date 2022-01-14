@@ -127,8 +127,8 @@ for (j = 1; j <= 10; j++) {
   }
   console.log(red);
 }
-*/
-negativna = 0;
+
+negativna = 0; /////////////////////////////////////////////////////////////////////////////Zadtak koji odredjuje srednju pozitivnu i srednju negativnu vrednost temperature
 ncounter = 0;
 pozitivna = 0;
 pcounter = 0;
@@ -144,3 +144,4 @@ for (i = 1; i <= 10; i++) {
 }
 console.log("Prosecna pozitivna je: " + pozitivna / pcounter);
 console.log("Prosecna negativna je: " + negativna / ncounter);
+
