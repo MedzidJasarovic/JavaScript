@@ -404,7 +404,7 @@ if (summ == 0) {
     summ + " je vrednost niza a " + summ / i + " je njegova aritmeticka sredina" // UPOREDJIVANJE BROJA SA NIZOM
   );
 }
-*/
+
 p1 = "scissors";
 p2 = "rock";
 function gg(p1, p2) {
@@ -423,3 +423,13 @@ gg(p1, p2);
 console.log(NaN === NaN);
 console.log(true + true + false);
 console.log(0.1 + 0.2 === 0.3);
+*/
+numbers = [1, 2, 3];
+function squareSum(numbers) {
+  summ = 0;
+  for (i = 0; i < numbers.length; i++) {
+    summ += numbers[i] * numbers[i];
+  }
+
+  return summ;
+}
