@@ -6,15 +6,30 @@ while (a.length < 6) {
 }
 
 
-a = prompt("Unesite broj ili END");
-while (a !== "END") {
-  a = prompt("Nastavi da unosis onda ...");
-}
-*/
+
+
 let a = parseInt(prompt("Unesite broj"));
 let summ = 0;
 while (a >= 0) {
-  summ += a;
+    /////////////////////////////////////////////////////////////////////TRZI UNOS DOK SE NE UNESE NEGATIVAN BROJ
+    summ += a;
   a = parseInt(prompt("Nastavi da unosis"));
 }
 console.log(summ);
+//////////////////////////////////////////
+a = prompt("Unesite neko ime ili END");
+while (a.toUpperCase() !== "END") {
+  console.log(a);
+  a = prompt("Nastavi da unosis onda ..."); //////////////////////////////////////////////////////////TRAZI IME DOK NE UNESES END, ISPISUJE SVA IMENA
+}
+console.log("Gotovo");
+*/ summ = 0;
+brojac = 0;
+a = parseInt(prompt("Unesite ocenu"));
+while (a >= 1 && a <= 5) {
+  summ += a;
+  brojac++;
+  a = parseInt(prompt("Unesite sledecu ocenu"));
+}
+sredina = summ / brojac;
+console.log(sredina);
