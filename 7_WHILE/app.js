@@ -36,7 +36,7 @@ while (a >= 1 && a <= 5) {
 }
 
 console.log(summ / broja);
-*/
+
 a = parseInt(prompt("Unesite broj"));
 br = Math.round(Math.random()) * 10;
 while (a !== br) {
@@ -48,3 +48,25 @@ while (a !== br) {
   a = parseInt(prompt("Unesite ponovo broj"));
 }
 console.log("Cestitam pogodili ste , trazeni broj je :" + br);
+
+//Domaci: napraviti kalkulator
+
+operator=prompt("Unesite operator")
+while(operator!=="STOP")
+{b1=parseInt(prompt("Unesite prvi broj"))
+b2=parseInt(prompt("Unesite drugi broj"))
+  if
+}
+t/v2*/
+t = prompt("Unesite svoju tezinu");
+v = prompt("Unesite svoju visinu");
+bmi = t / (v * v);
+if (bmi <= 18.5) {
+  console.log("Underweight");
+} else if (bmi <= 25.0) {
+  console.log("Normal");
+} else if (bmi <= 30.0) {
+  console.log("overweight");
+} else if (bmi > 30.0) {
+  console.log("Obesse");
+}
