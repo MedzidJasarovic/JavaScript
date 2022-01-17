@@ -57,7 +57,7 @@ while(operator!=="STOP")
 b2=parseInt(prompt("Unesite drugi broj"))
   if
 }
-t/v2*/
+t/v2
 t = prompt("Unesite svoju tezinu");
 v = prompt("Unesite svoju visinu");
 bmi = t / (v * v);
@@ -69,4 +69,12 @@ if (bmi <= 18.5) {
   console.log("overweight");
 } else if (bmi > 30.0) {
   console.log("Obesse");
+}
+*/ n = parseInt(prompt("Unesite broj"));
+brojac = 1;
+while (brojac <= n) {
+  if (brojac % 2 != 0) {
+    console.log(brojac);
+  }
+  brojac++;
 }
