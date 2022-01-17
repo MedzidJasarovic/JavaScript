@@ -70,11 +70,25 @@ if (bmi <= 18.5) {
 } else if (bmi > 30.0) {
   console.log("Obesse");
 }
-*/ n = parseInt(prompt("Unesite broj"));
+ n = parseInt(prompt("Unesite broj"));
 brojac = 1;
 while (brojac <= n) {
   if (brojac % 2 != 0) {
     console.log(brojac);
   }
   brojac++;
+}
+*/
+brj = prompt("Unesite broj");
+while (brj !== "STOP") {
+  if (brj > 0) {
+    console.log("Positive");
+  } else if (brj < 0) {
+    console.log("Negative");
+  } else if (brj == 0) {
+    console.log("Zero");
+  } else {
+    console.log("Niste uneli broj");
+  }
+  brj = prompt("Unesite sledeci broj ili STOP");
 }
