@@ -92,7 +92,7 @@ while (brj !== "STOP") {
   }
   brj = prompt("Unesite sledeci broj ili STOP");
 }
-*/
+
 g = prompt("Unesite  pocetnu godinu");
 g2 = prompt("Unesite krajnju vrednost");
 for (i = g; i <= g2; i++) {
@@ -100,3 +100,13 @@ for (i = g; i <= g2; i++) {
     console.log(i);
   }
 }
+
+*/
+broj = prompt("Unesite broj");
+brojac = 1;
+suma = 1;
+while (brojac <= broj) {
+  suma *= brojac;
+  brojac++;
+}
+console.log(suma);
