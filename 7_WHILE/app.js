@@ -78,7 +78,7 @@ while (brojac <= n) {
   }
   brojac++;
 }
-*/
+
 brj = prompt("Unesite broj");
 while (brj !== "STOP") {
   if (brj > 0) {
@@ -91,4 +91,12 @@ while (brj !== "STOP") {
     console.log("Niste uneli broj");
   }
   brj = prompt("Unesite sledeci broj ili STOP");
+}
+*/
+g = prompt("Unesite  pocetnu godinu");
+g2 = prompt("Unesite krajnju vrednost");
+for (i = g; i <= g2; i++) {
+  if (i % 4 == 0) {
+    console.log(i);
+  }
 }
