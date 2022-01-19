@@ -161,7 +161,7 @@ for (i = 0; i < br; i++) {
 for (i = br - 1; i >= 0; i--) {
   console.log(ar[i]);
 }
-*/
+
 ar = [];
 sum = 0;
 broj = prompt("Unesite broj elemenata koje zelite da saberete");
@@ -170,3 +170,13 @@ for (i = 0; i < broj; i++) {
   sum += ar[i];
 }
 console.log(sum);
+
+*/
+ero = [11, 34, 3, 32, 11, 9, 5, 69];
+max = ero[0];
+for (i = 0; i < ero.length; i++) {
+  if (ero[i] > max) {
+    max = ero[i];
+  }
+}
+console.log(max);
