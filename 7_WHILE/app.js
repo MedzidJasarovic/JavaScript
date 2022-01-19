@@ -156,4 +156,7 @@ br = prompt("Unesite broj elemenita koja zelite da unesete");
 for (i = 0; i < br; i++) {
   ar[i] = prompt("Unesite " + (i + 1) + ". clan");
 }
-console.log(ar);
+
+for (i = br - 1; i >= 0; i--) {
+  console.log(ar[i]);
+}
