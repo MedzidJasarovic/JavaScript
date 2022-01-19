@@ -124,7 +124,7 @@ console.log(tekst + slovo);
 ///////////////////////////////////////////////////////////////Napisi program koji dati broj konvertuje u minute i sate
 
 br = prompt("Unesite broj minuta");
-sati = Math.round(br / 60);
+sati = Math.floor(br / 60);
 minuti = br - sati * 60;
 if (br < 0) {
   console.log("Uneli ste negativan broj minuta");
@@ -133,7 +133,7 @@ if (br < 0) {
 } else {
   console.log(sati + " : " + minuti);
 }
-*/
+
 
 ////////////////////////////////////////Napisi program koji za uneti tekst svakoj unetoj reci pocento slovo stavlja na uppercase
 
@@ -151,3 +151,9 @@ for (i = 0; i < tekst.length; i++) {
   }
 }
 alert(ntekst);
+*/ ar = [];
+br = prompt("Unesite broj elemenita koja zelite da unesete");
+for (i = 0; i < br; i++) {
+  ar[i] = prompt("Unesite " + (i + 1) + ". clan");
+}
+console.log(ar);
