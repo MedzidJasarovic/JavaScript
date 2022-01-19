@@ -151,7 +151,8 @@ for (i = 0; i < tekst.length; i++) {
   }
 }
 alert(ntekst);
-*/ ar = [];
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ar = [];
 br = prompt("Unesite broj elemenita koja zelite da unesete");
 for (i = 0; i < br; i++) {
   ar[i] = prompt("Unesite " + (i + 1) + ". clan");
@@ -160,3 +161,12 @@ for (i = 0; i < br; i++) {
 for (i = br - 1; i >= 0; i--) {
   console.log(ar[i]);
 }
+*/
+ar = [];
+sum = 0;
+broj = prompt("Unesite broj elemenata koje zelite da saberete");
+for (i = 0; i < broj; i++) {
+  ar[i] = parseInt(prompt("Unesite broj"));
+  sum += ar[i];
+}
+console.log(sum);
