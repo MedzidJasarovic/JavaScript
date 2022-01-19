@@ -101,7 +101,7 @@ for (i = g; i <= g2; i++) {
   }
 }
 
-*/
+
 broj = prompt("Unesite broj");
 brojac = 1;
 suma = 1;
@@ -110,3 +110,26 @@ while (brojac <= broj) {
   brojac++;
 }
 console.log(suma);
+
+tekst = "medzid";
+tekst1 = tekst.slice(4, tekst.length);
+console.log(tekst1);
+
+
+tekst = promp("Unestie neki tekst");
+slovo = tekst.slice(0);
+console.log(tekst + slovo);
+*/
+
+//Napisi program koji dati broj konvertuje u minute i sate
+
+br = prompt("Unesite broj minuta");
+sati = Math.round(br / 60);
+minuti = br - sati * 60;
+if (br < 0) {
+  console.log("Uneli ste negativan broj minuta");
+} else if (br <= 60) {
+  console.log(br);
+} else {
+  console.log(sati + " : " + minuti);
+}
