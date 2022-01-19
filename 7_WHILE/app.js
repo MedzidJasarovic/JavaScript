@@ -119,9 +119,9 @@ console.log(tekst1);
 tekst = promp("Unestie neki tekst");
 slovo = tekst.slice(0);
 console.log(tekst + slovo);
-*/
+/////////////////////////////////////////////////////////DOMACIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-//Napisi program koji dati broj konvertuje u minute i sate
+///////////////////////////////////////////////////////////////Napisi program koji dati broj konvertuje u minute i sate
 
 br = prompt("Unesite broj minuta");
 sati = Math.round(br / 60);
@@ -133,3 +133,21 @@ if (br < 0) {
 } else {
   console.log(sati + " : " + minuti);
 }
+*/
+
+////////////////////////////////////////Napisi program koji za uneti tekst svakoj unetoj reci pocento slovo stavlja na uppercase
+
+tekst = prompt("Unesite neki tekst lol");
+ntekst = "";
+for (i = 0; i < tekst.length; i++) {
+  if (i === 0) {
+    ntekst += tekst[i].toUpperCase();
+  }
+  if (tekst[i] == " ") {
+    ntekst += " " + tekst[i + 1].toUpperCase();
+    i++;
+  } else {
+    ntekst += tekst[i];
+  }
+}
+alert(ntekst);
