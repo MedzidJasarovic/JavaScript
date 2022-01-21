@@ -182,9 +182,17 @@ for (i = 0; i < ero.length; i++) {
 console.log(max);
 
 ////////////////////////////////////////////DOMAKI///////////////////////////////
+niz = [];
+niztekst = "";
+broj = prompt("Unesite broj clanova niza koje zelite da unesete");
+for (i = 0; i < broj; i++) {
+  niz[i] = prompt("Unesite " + (i + 1) + ". clan niza pls");
+  niztekst += niz[i];
+}
+console.log(niztekst);
 
 ///////////////////////////////////////////////////////////////////////////////////////Promeni case svakog karaktera u stringu
-
+*/
 novi = "";
 tekst = prompt("Unesite tekst pls");
 for (i = 0; i < tekst.length; i++) {
@@ -194,14 +202,4 @@ for (i = 0; i < tekst.length; i++) {
 }
 console.log(novi);
 
-/////////////////////////////////////////////////////////////////////////dati array ispisi kao string sui 
-
-*/
-niz = [];
-niztekst = "";
-broj = prompt("Unesite broj clanova niza koje zelite da unesete");
-for (i = 0; i < broj; i++) {
-  niz[i] = prompt("Unesite " + (i + 1) + ". clan niza pls");
-  niztekst += niz[i];
-}
-console.log(niztekst);
+/////////////////////////////////////////////////////////////////////////dati array ispisi kao string sui
