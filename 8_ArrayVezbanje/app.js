@@ -114,7 +114,7 @@ console.log(slajsan); ////////////////Slice uzima elemente sa datih indexa (ne u
 ////////////
 ///////////
 ////////////
-*/
+
 
 ar1 = ["plava1", "plava2", "plava3", "crvena1"];
 ar2 = ["crvena1", "crvena1", "crvena2", "plava3"];
@@ -128,3 +128,12 @@ for (i = 0; i < ar1.length; i++) {
     }
 }
 console.log(ar3);
+
+*/
+niz = [1, 2, false, 2, undefined, "", 3, null];
+for (i = 0; i < niz.length; i++) {
+  if (Boolean(niz[i]) == false) {
+    niz.splice(i, 1);
+  }
+}
+console.log(niz);
