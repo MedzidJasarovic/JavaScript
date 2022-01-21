@@ -192,7 +192,7 @@ for (i = 0; i < broj; i++) {
 console.log(niztekst);
 
 ///////////////////////////////////////////////////////////////////////////////////////Promeni case svakog karaktera u stringu
-*/
+
 novi = "";
 tekst = prompt("Unesite tekst pls");
 for (i = 0; i < tekst.length; i++) {
@@ -203,3 +203,31 @@ for (i = 0; i < tekst.length; i++) {
 console.log(novi);
 
 /////////////////////////////////////////////////////////////////////////dati array ispisi kao string sui
+*/
+/*
+15. We have the following arrays : Go to the editor
+color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+o = ["th","st","nd","rd"]
+Write a JavaScript program to display the colors in the following way :
+"1st choice is Blue ."
+"2nd choice is Green."
+"3rd choice is Red."
+
+choice = [];
+o = ["st", "nd", "rd", "th"];
+broj = prompt("Enter the number of choices you will be entering");
+for (i = 0; i < broj; i++) {
+  choice[i] = prompt("Enter your choices acordingly");
+}
+for (i = 0; i < broj; i++) {
+  if ((i = 0)) {
+    console.log("1" + o[i] + " choice is " + choice[i]);
+  } else if ((i = 1)) {
+    console.log("2" + o[i] + " choice is " + choice[i]);
+  } else if ((i = 2)) {
+    console.log("3" + o[i] + " choice is " + choice[i]);
+  } else {
+    console.log(o[3] + " choice is " + choice[i]);
+  }
+}
+*/
