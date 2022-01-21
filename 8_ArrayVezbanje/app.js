@@ -61,7 +61,7 @@ console.log(summ);
 //     }
 //   }
 // }
-/
+/*
 /////////////////////// METODE SA NIZOVIMA METODE SA NIZOVIMA METODE SA NIZOVIMA METODE SA NIZOVIMA METODE SA NIZOVIMA
 //////////////////
 /////////////////
@@ -116,3 +116,15 @@ console.log(slajsan); ////////////////Slice uzima elemente sa datih indexa (ne u
 ////////////
 */
 
+ar1 = ["plava1", "plava2", "plava3", "crvena1"];
+ar2 = ["crvena1", "crvena1", "crvena2", "plava3"];
+ar3 = [];
+indeks = 0;
+for (i = 0; i < ar1.length; i++) {
+  for (j = 0; j < ar2.length; j++)
+    if (ar1[i] === ar2[j]) {
+      ar3[indeks] = ar1[i];
+      indeks++;
+    }
+}
+console.log(ar3);
