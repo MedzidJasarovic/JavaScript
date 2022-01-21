@@ -44,20 +44,75 @@ console.log(summ);
 // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 // ["3", "10", "100"]
 
-ar1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-ar2 = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-razlika = [];
-// for (i = 0; i < ar2.length; i++) {
-//   if (ar1[i] == null) {
-//     break;
-//   }
-//   else if(ar1[i])
-// }
+// ar1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// ar2 = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// razlika = [];
+// // for (i = 0; i < ar2.length; i++) {
+// //   if (ar1[i] == null) {
+// //     break;
+// //   }
+// //   else if(ar1[i])
+// // }
 
+// //////////////////////
+// for (i = 0; i < ar1.length; i++) {
+//   for (j = 0; j < ar2.length; j++) {
+//     if (ar1[i] != ar2[j]) {
+//     }
+//   }
+// }
+/
+/////////////////////// METODE SA NIZOVIMA METODE SA NIZOVIMA METODE SA NIZOVIMA METODE SA NIZOVIMA METODE SA NIZOVIMA
+//////////////////
+/////////////////
+//////////////////
+//////////////
+vocke = ["jabuke", "tresnje", "banane", "jagode"];
+console.log(vocke);
+vocke.push("ananas"); //Dodaje oni element na kraj niza
+a = vocke.push("mandarine");
+console.log(vocke);
+console.log(a);
+/////////////////
+/////////////////
+///////////////
+/////////////
+vocke.pop(); ////////////////////////// Uklanja posledji element niza
+console.log(vocke);
+uklonjenaVrednost = vocke.pop(); ////////////////// Varijabli dodeljujemo uklonjenu vrednost
+console.log(uklonjenaVrednost);
+console.log(vocke);
+//////////////////////////////////
+/////////////////////////////////
+///////////////////////////////
+stringVocki = vocke.join("-");
+console.log(stringVocki);
+console.log(vocke.join("-")); //////////////////////Pretvara elemente u string i moze da stavlja neki separator izmedju svakog clana
 //////////////////////
-for (i = 0; i < ar1.length; i++) {
-  for (j = 0; j < ar2.length; j++) {
-    if (ar1[i] != ar2[j]) {
-    }
-  }
-}
+//////////////////////
+///////////////////
+////////////////
+b = vocke.shift();
+console.log(vocke); /////////////////////// Shift uklanja prvi element niza i moze da ga prosledi nekoj varijabli
+console.log(b);
+vocke.unshift("Tuki-fruit"); /////////dodaje novi element na pocetak niza
+console.log(vocke);
+//////////////////
+/////////////////
+//////////////
+///////////////
+povrcke = ["paradajz", "kukuruz", "paprika"];
+novi = vocke.concat(povrcke, ["pirinac"]); ////////////// Concat dodaje jedan string na drugi
+console.log(novi);
+////////////////
+///////////////
+//////////////PROBAJ SPLICE DA ODRADIS
+//////////
+///////////
+slajsan = vocke.slice(1, 3);
+console.log(slajsan); ////////////////Slice uzima elemente sa datih indexa (ne uzima prvi ali uzima poslednji index i ne menja niz)
+////////////
+///////////
+////////////
+*/
+
