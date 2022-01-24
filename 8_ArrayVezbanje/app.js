@@ -129,7 +129,7 @@ for (i = 0; i < ar1.length; i++) {
 }
 console.log(ar3);
 
-*/
+
 niz = [1, "", 2, false, 2, undefined, 3, null];
 truti = [];
 for (i = 0; i < niz.length; i++) {
@@ -138,3 +138,17 @@ for (i = 0; i < niz.length; i++) {
   }
 }
 console.log(truti);
+*/
+///////////////////////////////////////////////////////Ispisati program koji izacuje razlicite clanove iz dva
+
+niz1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+niz2 = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+razlika = niz1.concat(niz2);
+for (i = 0; i < razlika.length; i++) {
+  for (j = 0; j < razlika.length; i++) {
+    if (razlika[i] == razlika[j]) {
+      delete razlika[j];
+    }
+  }
+}
+console.log(razlika);
