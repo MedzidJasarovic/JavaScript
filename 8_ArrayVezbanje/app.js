@@ -194,7 +194,7 @@ for (i = str.length - 1; i >= 0; i--) {        //////////////////////////////Str
 }
 console.log(rts);
 return rts;
-*/
+
 
 // n = 456;
 // n1 = n.toString();
@@ -208,6 +208,8 @@ return rts;
 
 // }
 // console.log(suma);
+
+/////////////////////////////////////////////////////////////VELJiki programmmmmmm
 broj = prompt("Unesite broj elemenata vaseg niza");
 ar1 = [];
 for (i = 0; i < broj; i++) {
@@ -229,4 +231,16 @@ while (odgovor == "NE") {
   }
   console.log(ar1);
   odgovor = prompt("Jeste li sada zadovoljni?");
+}
+*/
+data = [3, 21, 32, 36, 37, 56, 8, 12, 16, 18, 20, 68, 69];
+alert(data);
+broj = prompt("Unesite broj koji zelite da nadjete iz niza");
+for (i = 0; i < data.length; i++) {
+  if (data[i] == broj) {
+    alert("Nalazi se na indeksu " + i);
+    break;
+  } else if (data[data.length - 1] != broj) {
+    alert("Niste uneli broj koji se nalazi u nizu");
+  }
 }
