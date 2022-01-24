@@ -232,7 +232,7 @@ while (odgovor == "NE") {
   console.log(ar1);
   odgovor = prompt("Jeste li sada zadovoljni?");
 }
-*/
+
 data = [3, 21, 32, 36, 37, 56, 8, 12, 16, 18, 20, 68, 69];
 alert(data);
 broj = prompt("Unesite broj koji zelite da nadjete iz niza");
@@ -243,4 +243,19 @@ for (i = 0; i < data.length; i++) {
   } else if (data[data.length - 1] != broj) {
     alert("Niste uneli broj koji se nalazi u nizu");
   }
+}
+*/
+data = [1, 2, 3, 4, 5, 6, 7];
+data1 = [1, 2, 3, 4, 5, 6, 7];
+if (data.length == data1.length) {
+  for (i = 0; i < data1.length; i++) {
+    if (data[i] !== data1[i]) {
+      console.log("Nisu isti");
+      break;
+    } else {
+      console.log("Isti su");
+    }
+  }
+} else {
+  console.log("Nisu isti");
 }
