@@ -153,12 +153,12 @@ for (i = 0; i < razlika.length; i++) {
 }
 console.log(razlika);
 
-*/
+
 
 
 ////////////////////////////////////////Napisi program koji nalazi dva clana iz niza cija je suma neki ciljani broj
-brojevi[10,20,30,40,50,60,70,80,90,100]
-meta=110
+brojevi[10,20,30,40,50,60,70,80,90,100];
+meta=110;
 for(i=0;i<brojevi.length;i++)
 {
   for(j=0;j<brojevi.length;j++)
@@ -169,7 +169,20 @@ for(i=0;i<brojevi.length;i++)
     }
 
   }
+}*/
+
+///////////////////////////// Array shuffle
+
+arej = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+niz = [];
+
+cobi = arej.length;
+
+while (cobi > 0) {
+  index = Math.floor(Math.random() * cobi);
+  cobi--;
+  temp = arej[cobi];
+  arej[cobi] = arej[index];
+  arej[index] = temp;
 }
-
-
-
+console.log(arej);
