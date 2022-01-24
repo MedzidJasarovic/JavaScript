@@ -169,12 +169,11 @@ for(i=0;i<brojevi.length;i++)
     }
 
   }
-}*/
+}
 
 ///////////////////////////// Array shuffle
 
 arej = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-niz = [];
 
 cobi = arej.length;
 
@@ -186,3 +185,48 @@ while (cobi > 0) {
   arej[index] = temp;
 }
 console.log(arej);
+
+
+str = "Medzid";
+rts = "";
+for (i = str.length - 1; i >= 0; i--) {        //////////////////////////////String reverser (Codewars)
+  rts += str[i];
+}
+console.log(rts);
+return rts;
+*/
+
+// n = 456;
+// n1 = n.toString();
+// suma = 0;
+// for (i = 0; i < n1.length; i++) {
+//   suma += parseInt(n1[i]);
+// }
+// while(suma>=10) {
+//   for (i = 0; i < suma.length; i++) {
+//     suma += parseInt(n1[i]);
+
+// }
+// console.log(suma);
+broj = prompt("Unesite broj elemenata vaseg niza");
+ar1 = [];
+for (i = 0; i < broj; i++) {
+  ar1[i] = prompt("Unesite element stringa");
+}
+console.log(ar1);
+console.log("Da li ste pravilno uneli elemente?");
+odgovor = prompt("Unesite DA ili Ne");
+while (odgovor == "NE") {
+  dod = prompt("Za dodavanje elemenata unesite 1 a za uklanjanje unesite 0");
+  if (dod == 0) {
+    a = prompt("Sa kojeg indeksa uklanjate?");
+    b = prompt("Koliko elemenata uklanjate?");
+    ar1.splice(a, b);
+  } else if (dod == 1) {
+    a = prompt("Sa kojeg indeksa dodajete?");
+    dodati = prompt("Unesite element koji zelite da dodate");
+    ar1.splice(a, 0, dodati);
+  }
+  console.log(ar1);
+  odgovor = prompt("Jeste li sada zadovoljni?");
+}
