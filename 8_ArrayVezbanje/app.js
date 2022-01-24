@@ -130,10 +130,11 @@ for (i = 0; i < ar1.length; i++) {
 console.log(ar3);
 
 */
-niz = [1, 2, false, 2, undefined, "", 3, null];
+niz = [1, "", 2, false, 2, undefined, 3, null];
+truti = [];
 for (i = 0; i < niz.length; i++) {
-  if (Boolean(niz[i]) == false) {
-    niz.splice(i, 1);
+  if (Boolean(niz[i]) == true) {
+    truti.push(niz[i]);
   }
 }
-console.log(niz);
+console.log(truti);
