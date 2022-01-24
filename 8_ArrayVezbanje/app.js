@@ -138,7 +138,7 @@ for (i = 0; i < niz.length; i++) {
   }
 }
 console.log(truti);
-*/
+
 ///////////////////////////////////////////////////////Ispisati program koji izacuje razlicite clanove iz dva
 
 niz1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -152,3 +152,24 @@ for (i = 0; i < razlika.length; i++) {
   }
 }
 console.log(razlika);
+
+*/
+
+
+////////////////////////////////////////Napisi program koji nalazi dva clana iz niza cija je suma neki ciljani broj
+brojevi[10,20,30,40,50,60,70,80,90,100]
+meta=110
+for(i=0;i<brojevi.length;i++)
+{
+  for(j=0;j<brojevi.length;j++)
+  {
+    if((brojevi[i]+brojevi[j])=meta)
+    {
+      console.log(meta + " se dobija od: "+ brojevi[i]+" + "+ brojevi[j]+" .");
+    }
+
+  }
+}
+
+
+
