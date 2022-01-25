@@ -273,4 +273,73 @@ for (i = 0; i < ar.length; i++) {
   }
 }
 console.log(duplikat);
+
+n = 35231;
+n1 = n.toString();
+ar = [];
+
+for (i = 0; i < n1.length; i++) {
+  ar.unshift(n1[i]);
+}
+console.log(ar);
+
+
+
+
+// nesto = "ja sam, medizd";
+// nesto_arr = nesto.split(",");
+
+// duplikat = [];
+// for (i = 0; i < ar.length; i++) {
+//   for (j = i + 1; j < ar.length; j++) {
+//     if (ar[i] == ar[j]) {
+//       duplikat.push(ar[i]);
+//     }
+//   }
+// }
+// console.log(duplikat);
+
+// console.log(nesto_arr);
+
+numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+parni = [];
+for (i = 0; i < numbersArray.length; i++) {
+  if (numbersArray[i] % 2 == 0) {    /////////////////////////////////////////////Codewars sui
+    parni.push(numbersArray[i]);
+  }
+}
+console.log(parni);
+
+
 */
+// dna = "dnkdnkdnkdnACTACTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT";
+// rnk = "";
+
+// for (i = 0; i < dna.length; i++) {
+//   if (dna[i] === "T") {
+//     rnk += "U";
+//   } else rnk += dna[i];
+// }
+// console.log(rnk);
+////////////////////////////////////////////////////////////////////////Codewars
+
+mat = [
+  [11, 12, 14, 54],
+  [67, 89, 90, 56],
+  [7, 9, 4, 3],
+  [9, 8, 6, 7],
+];
+min = mat[0][0];
+sum = 0;
+for (let i = 0; i < mat.length; i++) {
+  min = mat[i][0];
+  for (let j = 0; j < mat[i].length; j++) {
+    if (mat[i][j] < min) {
+      min = mat[i][j];
+    }
+  }
+  console.log(min);
+  sum += min;
+}
+
+console.log(sum);
