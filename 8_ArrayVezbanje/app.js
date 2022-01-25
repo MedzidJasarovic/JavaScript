@@ -244,7 +244,8 @@ for (i = 0; i < data.length; i++) {
     alert("Niste uneli broj koji se nalazi u nizu");
   }
 }
-*/
+
+/////////////////////////////////////////////////////////////Zadatak koji uporedjuje dva stringa i da li u isti!!!!!!!!!!
 data = [1, 2, 3, 4, 5, 6, 7];
 data1 = [1, 2, 3, 4, 5, 6, 7];
 if (data.length == data1.length) {
@@ -259,3 +260,17 @@ if (data.length == data1.length) {
 } else {
   console.log("Nisu isti");
 }
+
+////////////////////////////////////////////////////DOMAKI!!!! Proveri da li postoje duplikati u stringu
+
+ar = [11, 2, 3, 33, 4, 55, 6, 3, 77, 8, 99, 100, 11, 2];
+duplikat = [];
+for (i = 0; i < ar.length; i++) {
+  for (j = i + 1; j < ar.length; j++) {
+    if (ar[i] == ar[j]) {
+      duplikat.push(ar[i]);
+    }
+  }
+}
+console.log(duplikat);
+*/
