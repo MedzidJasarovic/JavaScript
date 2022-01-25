@@ -311,7 +311,7 @@ for (i = 0; i < numbersArray.length; i++) {
 console.log(parni);
 
 
-*/
+
 // dna = "dnkdnkdnkdnACTACTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT";
 // rnk = "";
 
@@ -321,7 +321,7 @@ console.log(parni);
 //   } else rnk += dna[i];
 // }
 // console.log(rnk);
-////////////////////////////////////////////////////////////////////////Codewars
+////////////////////////////////////////////////////////////////////////Codewars zbir minimalnih elemenata niza
 
 mat = [
   [11, 12, 14, 54],
@@ -343,3 +343,4 @@ for (let i = 0; i < mat.length; i++) {
 }
 
 console.log(sum);
+*/
