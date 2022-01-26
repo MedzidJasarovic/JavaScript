@@ -79,14 +79,32 @@
 
 //////////////////////////////////////////////MEKSICKI TALAS _____________ hello -> [Hello,hEllo,heLlo,helLo,hellO]
 
-str = "hello";
-newArr = [];
-for (i = 0; i < str.length; i++) {
-  copy = str.split("");
-  if (copy[i] !== " ") {
-    copy[i] = copy[i].toUpperCase();
-    newArr.push(copy.join(""));
-  }
+// str = "hello";
+// newArr = [];
+// for (i = 0; i < str.length; i++) {
+//   copy = str.split("");
+//   if (copy[i] !== " ") {
+//     copy[i] = copy[i].toUpperCase();
+//     newArr.push(copy.join(""));
+//   }
+// }
+
+// return newArr;
+
+///////////////////////////////////////////////////////////////////TOWER BUILDER!!!!!!!!!!!!!!!
+nFloors = prompt("Number of floors?");
+var toranj = [];
+var numSpaces = 0;
+
+for (i = nFloors; i > 0; i--) {
+  toranj.push(
+    " ".repeat(numSpaces) +
+      "*".repeat(i) +
+      "*".repeat(i - 1) +
+      " ".repeat(numSpaces)
+  );
+
+  numSpaces++;
 }
-g;
-return newArr;
+
+console.log(toranj);
