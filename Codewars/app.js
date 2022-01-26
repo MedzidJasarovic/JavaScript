@@ -47,13 +47,29 @@
 // }
 
 ///////////////////////////////////////////////////nadji jedinstven broj u nizu
-arr = [1, 0, 0];
-arr1 = [3, 10, 3, 3, 3];
+// arr = [1, 0, 0];
+// arr1 = [3, 10, 3, 3, 3];
 
-arr = arr.sort((a, b) => a - b);
-console.log(arr);
-if (arr[0] != arr[1]) {
-  return arr[0];
-} else {
-  return arr[arr.length - 1];
+// arr = arr.sort((a, b) => a - b);
+// console.log(arr);
+// if (arr[0] != arr[1]) {
+//   return arr[0];
+// } else {
+//   return arr[arr.length - 1];
+// }
+
+////////////////////////////////////////Uneti tekst podeli na clanove niza od 2 karaktera ako je neparan broj karaktera poslednjem dodati "_"
+
+str = "abc";
+
+i = 0;
+result = [];
+if (str.length % 2 !== 0) {
+  str = str + "_";
 }
+while (i < str.length) {
+  result.push(str[i] + str[i + 1]);
+  i += 2;
+}
+return result;
+console.log(result);
