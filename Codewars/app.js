@@ -23,10 +23,13 @@
 //     }
 //   }
 //   return rezultat;
+///
 // }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 // a1 = [4, 8, 6, 1, 3, 0, 9, 10, 1000];
 // a1 = a1.sort((a, b) => a - b); /////////////////////////////////SORTIRA ELEMENTE NIZA PO VELICINI
 // console.log(a1);
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////Proveri da li je isti broj Xx i Oo u stringu
 
@@ -60,16 +63,30 @@
 
 ////////////////////////////////////////Uneti tekst podeli na clanove niza od 2 karaktera ako je neparan broj karaktera poslednjem dodati "_"
 
-str = "abc";
+// str = "abc";
 
-i = 0;
-result = [];
-if (str.length % 2 !== 0) {
-  str = str + "_";
+// i = 0;
+// result = [];
+// if (str.length % 2 !== 0) {
+//   str = str + "_";
+// }
+// while (i < str.length) {
+//   result.push(str[i] + str[i + 1]);
+//   i += 2;
+// }
+
+// console.log(result);
+
+//////////////////////////////////////////////MEKSICKI TALAS _____________ hello -> [Hello,hEllo,heLlo,helLo,hellO]
+
+str = "hello";
+newArr = [];
+for (i = 0; i < str.length; i++) {
+  copy = str.split("");
+  if (copy[i] !== " ") {
+    copy[i] = copy[i].toUpperCase();
+    newArr.push(copy.join(""));
+  }
 }
-while (i < str.length) {
-  result.push(str[i] + str[i + 1]);
-  i += 2;
-}
-return result;
-console.log(result);
+g;
+return newArr;
