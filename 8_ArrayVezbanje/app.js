@@ -263,7 +263,7 @@ if (data.length == data1.length) {
 
 ////////////////////////////////////////////////////DOMAKI!!!! Proveri da li postoje duplikati u stringu
 
-ar = [11, 2, 3, 33, 4, 55, 6, 3, 77, 8, 99, 100, 11, 2];
+ar = [11, 2, 3, 33,11, 4, 55, 6, 3, 77, 8, 99, 100, 11, 2];
 duplikat = [];
 for (i = 0; i < ar.length; i++) {
   for (j = i + 1; j < ar.length; j++) {
@@ -350,3 +350,25 @@ console.log(sum);
 //   rezultat += str[i];
 // }
 // console.log(rezultat);
+
+//////////////////////////////////////IZRACUNAJ AVERAGE VALUE U ARRAY
+// summ = 0;
+// counter = 0;
+// arr1 = [3, 6, 23, 9, 44, 14, 83, 22, 5, 1];
+// for (i = 0; i < arr1.length; i++) {
+//   summ += arr1[i];
+//   counter++;
+// }
+// console.log(summ / counter);
+
+a = [3, 6, 0, 23, 0, 9, 44, 0, 14, 0, 83, 22, 5, 1];
+nule = [];
+rezultat = [];
+for (i = 0; i < a.length; i++) {
+  if (a[i] == 0) {
+    a.splice(i, 1);
+    a.push(0);
+  }
+}
+
+console.log(a);

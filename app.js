@@ -472,4 +472,3 @@ console.log(br);
 */
 
 //
-console.log("Moj tuki");
