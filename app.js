@@ -470,3 +470,6 @@ niz.slice(1, 3);
 console.log(niz);
 console.log(br);
 */
+
+//
+console.log("Moj tuki");

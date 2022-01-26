@@ -92,19 +92,19 @@
 // return newArr;
 
 ///////////////////////////////////////////////////////////////////TOWER BUILDER!!!!!!!!!!!!!!!
-nFloors = prompt("Number of floors?");
-var toranj = [];
-var numSpaces = 0;
+// nFloors = prompt("Number of floors?");
+// var toranj = [];
+// var numSpaces = 0;
 
-for (i = nFloors; i > 0; i--) {
-  toranj.push(
-    " ".repeat(numSpaces) +
-      "*".repeat(i) +
-      "*".repeat(i - 1) +
-      " ".repeat(numSpaces)
-  );
+// for (i = nFloors; i > 0; i--) {
+//   toranj.push(
+//     " ".repeat(numSpaces) +
+//       "*".repeat(i) +
+//       "*".repeat(i - 1) +
+//       " ".repeat(numSpaces)
+//   );
 
-  numSpaces++;
-}
+//   numSpaces++;
+// }
 
-console.log(toranj);
+// console.log(toranj);

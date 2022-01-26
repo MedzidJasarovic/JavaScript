@@ -273,7 +273,7 @@ for (i = 0; i < ar.length; i++) {
   }
 }
 console.log(duplikat);
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 n = 35231;
 n1 = n.toString();
 ar = [];
@@ -344,3 +344,9 @@ for (let i = 0; i < mat.length; i++) {
 
 console.log(sum);
 */
+// str = "Medzid";
+// rezultat = "";
+// for (i = str.length - 1; (i = 0); i--) {
+//   rezultat += str[i];
+// }
+// console.log(rezultat);
