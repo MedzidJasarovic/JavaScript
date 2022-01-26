@@ -30,18 +30,30 @@
 
 //////////////////////////////////////////////////////////Proveri da li je isti broj Xx i Oo u stringu
 
-str = "xXxXxOoOoO";
-xcount = 0;
-ocount = 0;
-for (i = 0; i < str.length; i++) {
-  if (str[i] === "X" || str[i] === "x") {
-    xcount++;
-  } else if (str[i] === "O" || str[i] === "o") {
-    ocount++;
-  }
-}
-if (xcount == ocount) {
-  return true;
+// str = "xXxXxOoOoO";
+// xcount = 0;
+// ocount = 0;
+// for (i = 0; i < str.length; i++) {
+//   if (str[i] === "X" || str[i] === "x") {
+//     xcount++;
+//   } else if (str[i] === "O" || str[i] === "o") {
+//     ocount++;
+//   }
+// }
+// if (xcount == ocount) {
+//   return true;
+// } else {
+//   return false;
+// }
+
+///////////////////////////////////////////////////nadji jedinstven broj u nizu
+arr = [1, 0, 0];
+arr1 = [3, 10, 3, 3, 3];
+
+arr = arr.sort((a, b) => a - b);
+console.log(arr);
+if (arr[0] != arr[1]) {
+  return arr[0];
 } else {
-  return false;
+  return arr[arr.length - 1];
 }
