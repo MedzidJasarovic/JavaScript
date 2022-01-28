@@ -125,3 +125,7 @@
 // minute < 10 ? (minute = minute = "0" + minute) : (minute = minute);
 // seconds < 10 ? (seconds = seconds = "0" + seconds) : (seconds = seconds);
 // return sat + ":" + minute + ":" + seconds;
+
+arr = [1, 222, 31, 15];
+arr.sort();
+console.log(arr);
