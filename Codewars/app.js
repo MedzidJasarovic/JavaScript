@@ -109,18 +109,19 @@
 
 // console.log(toranj);
 
-seconds = 6700;
-minute = 0;
-sat = 0;
-if (seconds > 359999 || seconds < 0) {
-  console.log("jedi gocna");
-} else {
-  sat = Math.floor(seconds / 3600);
-  minute = Math.floor((seconds - sat * 3600) / 60);
-  seconds = seconds - sat * 3600 - minute * 60;
-}
+////////////////////////////////////////////////////////PROFI ZADATAK PETI KJU RESIO GA KO MASINA BAS SES
+// seconds = 6700;
+// minute = 0;
+// sat = 0;
+// if (seconds > 359999 || seconds < 0) {
+//   console.log("jedi gocna");
+// } else {
+//   sat = Math.floor(seconds / 3600);
+//   minute = Math.floor((seconds - sat * 3600) / 60);
+//   seconds = seconds - sat * 3600 - minute * 60;
+// }
 
-sat < 10 ? (sat = sat = "0" + sat) : (sat = sat);
-minute < 10 ? (minute = minute = "0" + minute) : (minute = minute);
-seconds < 10 ? (seconds = seconds = "0" + seconds) : (seconds = seconds);
-return sat + ":" + minute + ":" + seconds;
+// sat < 10 ? (sat = sat = "0" + sat) : (sat = sat);
+// minute < 10 ? (minute = minute = "0" + minute) : (minute = minute);
+// seconds < 10 ? (seconds = seconds = "0" + seconds) : (seconds = seconds);
+// return sat + ":" + minute + ":" + seconds;
