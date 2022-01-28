@@ -126,6 +126,32 @@
 // seconds < 10 ? (seconds = seconds = "0" + seconds) : (seconds = seconds);
 // return sat + ":" + minute + ":" + seconds;
 
-arr = [1, 222, 31, 15];
-arr.sort();
-console.log(arr);
+///////////////////////////////////////////RETURN FIRST NON REPEATABLE characte/////////////////////// PETI KJUUU ALE
+
+function firstNonRepeatingLetter(str) {
+  arra1 = str.split("");
+
+  upper = arra1.join("").toUpperCase();
+  result = "";
+  ctr = 0;
+
+  if (arra1 == arra1.reverse) {
+    return arra1[0];
+  } else {
+    for (i = 0; i < upper.length; i++) {
+      ctr = 0;
+
+      for (var j = 0; j < arra1.length; j++) {
+        if (upper[i] === upper[j]) {
+          ctr += 1;
+        }
+      }
+
+      if (ctr < 2) {
+        result = str[i];
+        break;
+      }
+    }
+    return result;
+  }
+}
