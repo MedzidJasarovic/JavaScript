@@ -361,14 +361,36 @@ console.log(sum);
 // }
 // console.log(summ / counter);
 
-a = [3, 6, 0, 23, 0, 9, 44, 0, 14, 0, 83, 22, 5, 1];
-nule = [];
-rezultat = [];
-for (i = 0; i < a.length; i++) {
-  if (a[i] == 0) {
-    a.splice(i, 1);
-    a.push(0);
-  }
-}
+// a = [3, 6, 23, 0, 9, 44, 0, 14, 0, 83, 22, 5, 1];
+// nule = [];
+// rezultat = [];
+// for (i = 0; i < a.length; i++) {
+//   if (a[i] == 0) {
+//     a.splice(i, 1);
+//     a.push(0);
+//   }
+// }
 
-console.log(a);
+// console.log(a);
+
+// arr = [1, 2, 5, 6, 8, 99, 123, 33];
+// max = arr[0];
+// min = arr[0];
+// for (i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   } else if (arr[i] < min) {
+//     min = arr[i];
+//   }
+// }
+// console.log(max - min);
+
+///////////////////////////////////////////BROJ SA NAJVISE CIFARA
+// ar = [1, 2, 3, 4, 5, -7000, -69699, -69700, 69, 0];
+// max = ar[0];
+// for (i = 0; i < ar.length; i++) {
+//   if (Math.abs(ar[i]) > Math.abs(max)) {
+//     max = ar[i];
+//   }
+// }
+// console.log(max);
