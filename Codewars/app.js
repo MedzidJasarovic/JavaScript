@@ -185,15 +185,71 @@
 
 /////////////////////////////////////////////////////ADDING BIG NUMBERS 4 KYU
 
-function add(a, b) {
-  var result = "";
-  var carry = 0;
-  a = a.split("");
-  b = b.split("");
-  while (a.length || b.length || carry) {
-    carry += ~~a.pop() + ~~b.pop();
-    result = (carry % 10) + result;
-    carry = carry > 9;
+// function add(a, b) {
+//   var result = "";
+//   var carry = 0;
+//   a = a.split("");
+//   b = b.split("");
+//   while (a.length || b.length || carry) {
+//     carry += ~~a.pop() + ~~b.pop();
+//     result = (carry % 10) + result;
+//     carry = carry > 9;
+//   }
+//   return result;
+// }
+
+/////////////////////////////////////////////////NADJI MINU
+
+// polje = [
+//   [1, 0],
+//   [0, 0],
+// ];
+// mina = [];
+// for (i = 0; i < polje.length; i++) {
+//   for (j = 0; j < polje.length; j++)
+//     if (polje[i][j] == 1) {
+//       mina.push(i);
+//       mina.push(j);
+//     }
+// }
+// console.log(mina);
+
+///////////////////////////////////////Fake binary
+
+// x = "123447777588912344312";
+// y = x.split("");
+// tuki = [];
+// vracen = "";
+// for (i = 0; i < x.length; i++) {
+//   if (y[i] < 5) {
+//     tuki.push(0);
+//   } else if (y[i] >= 5) {
+//     tuki.push(1);
+//   }
+// }
+// vracen = tuki.join("");
+// console.log(vracen);
+
+// /////////////////////////////////////////// reverse or rotate
+function revrot(str, sz) {
+  if (sz <= 0 || !str || sz > str.length) return "";
+
+  const sumCubes = (chunk) =>
+    chunk.split("").reduce((sum, digit) => (sum += digit ** 3), 0);
+  const reverse = (chunk) => chunk.split("").reverse().join("");
+  const rotate = (chunk) => chunk.slice(1) + chunk.slice(0, 1);
+
+  const chunks = [];
+
+  for (let i = 0; i < str.length; i += sz) {
+    let chunk = str.slice(i, i + sz);
+
+    if (chunk.length < sz) continue;
+
+    chunk = sumCubes(chunk) % 2 ? rotate(chunk) : reverse(chunk);
+
+    chunks.push(chunk);
   }
-  return result;
+
+  return chunks.join("");
 }
