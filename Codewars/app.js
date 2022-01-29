@@ -200,35 +200,35 @@
 
 /////////////////////////////////////////////////NADJI MINU
 
-// polje = [
-//   [1, 0],
-//   [0, 0],
-// ];
-// mina = [];
-// for (i = 0; i < polje.length; i++) {
-//   for (j = 0; j < polje.length; j++)
-//     if (polje[i][j] == 1) {
-//       mina.push(i);
-//       mina.push(j);
-//     }
-// }
-// console.log(mina);
+polje = [
+  [1, 0],
+  [0, 0],
+];
+mina = [];
+for (i = 0; i < polje.length; i++) {
+  for (j = 0; j < polje.length; j++)
+    if (polje[i][j] == 1) {
+      mina.push(i);
+      mina.push(j);
+    }
+}
+console.log(mina);
 
 ///////////////////////////////////////Fake binary
 
-x = "123447777588912344312";
-y = x.split("");
-tuki = [];
-vracen = "";
-for (i = 0; i < x.length; i++) {
-  if (y[i] < 5) {
-    tuki.push(0);
-  } else if (y[i] >= 5) {
-    tuki.push(1);
-  }
-}
-vracen = tuki.join("");
-console.log(vracen);
+// x = "123447777588912344312";
+// y = x.split("");
+// tuki = [];
+// vracen = "";
+// for (i = 0; i < x.length; i++) {
+//   if (y[i] < 5) {
+//     tuki.push(0);
+//   } else if (y[i] >= 5) {
+//     tuki.push(1);
+//   }
+// }
+// vracen = tuki.join("");
+// console.log(vracen);
 
 // /////////////////////////////////////////// reverse or rotate
 // function revrot(str, sz) {
