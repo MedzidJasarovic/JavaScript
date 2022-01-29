@@ -128,30 +128,72 @@
 
 ///////////////////////////////////////////RETURN FIRST NON REPEATABLE characte/////////////////////// PETI KJUUU ALE
 
-function firstNonRepeatingLetter(str) {
-  arra1 = str.split("");
+// function firstNonRepeatingLetter(str) {
+//   arra1 = str.split("");
 
-  upper = arra1.join("").toUpperCase();
-  result = "";
-  ctr = 0;
+//   upper = arra1.join("").toUpperCase();
+//   result = "";
+//   ctr = 0;
 
-  if (arra1 == arra1.reverse) {
-    return arra1[0];
-  } else {
-    for (i = 0; i < upper.length; i++) {
-      ctr = 0;
+//   if (arra1 == arra1.reverse) {
+//     return arra1[0];
+//   } else {
+//     for (i = 0; i < upper.length; i++) {
+//       ctr = 0;
 
-      for (var j = 0; j < arra1.length; j++) {
-        if (upper[i] === upper[j]) {
-          ctr += 1;
-        }
-      }
+//       for (var j = 0; j < arra1.length; j++) {
+//         if (upper[i] === upper[j]) {
+//           ctr += 1;
+//         }
+//       }
 
-      if (ctr < 2) {
-        result = str[i];
-        break;
-      }
-    }
-    return result;
+//       if (ctr < 2) {
+//         result = str[i];
+//         break;
+//       }
+//     }
+//     return result;
+//   }
+// }
+///////////////////////BOLJI SOLUTION
+// function firstNonRepeatingLetter(s) {
+//     let str = s.toLowerCase();
+//     for(let i = 0; i < str.length; i++) {
+//       if(str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+//         return s[i];
+//       }
+//     }
+//     return "";
+//   }
+
+///////////////////////////////////////////////////
+
+// str1 = "guccci";
+// str2 = "gucci";
+// arr1 = str1.split("");
+// arr2 = str2.split("");
+// const containsAll = arr2.every((element) => {
+//   return arr1.includes(element);
+// });
+
+// if (containsAll) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+///////////////
+
+/////////////////////////////////////////////////////ADDING BIG NUMBERS 4 KYU
+
+function add(a, b) {
+  var result = "";
+  var carry = 0;
+  a = a.split("");
+  b = b.split("");
+  while (a.length || b.length || carry) {
+    carry += ~~a.pop() + ~~b.pop();
+    result = (carry % 10) + result;
+    carry = carry > 9;
   }
+  return result;
 }
