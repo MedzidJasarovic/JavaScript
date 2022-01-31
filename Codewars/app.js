@@ -200,19 +200,19 @@
 
 /////////////////////////////////////////////////NADJI MINU
 
-polje = [
-  [1, 0],
-  [0, 0],
-];
-mina = [];
-for (i = 0; i < polje.length; i++) {
-  for (j = 0; j < polje.length; j++)
-    if (polje[i][j] == 1) {
-      mina.push(i);
-      mina.push(j);
-    }
-}
-console.log(mina);
+// polje = [
+//   [1, 0],
+//   [0, 0],
+// ];
+// mina = [];
+// for (i = 0; i < polje.length; i++) {
+//   for (j = 0; j < polje.length; j++)
+//     if (polje[i][j] == 1) {
+//       mina.push(i);
+//       mina.push(j);
+//     }
+// }
+// console.log(mina);
 
 ///////////////////////////////////////Fake binary
 
@@ -253,3 +253,63 @@ console.log(mina);
 
 //   return chunks.join("");
 // }
+
+////////////////////////////////////////////////////////////////////////////////TWICE AS OLD 8KYU
+
+// o = 54;
+// s = 26;
+// counter = 0;
+
+// if (o / s < 2 && o % s != 0) {
+//   for (i = 0; i < s; i++) {
+//     counter++;
+//     o--;
+//     s--;
+
+//     if (o % s == 2) {
+//       break;
+//     }
+//   }
+// } else if (o / s > 2 && o % s != 0) {
+//   for (i = 0; i < s; i++) {
+//     counter++;
+//     o++;
+//     s++;
+
+//     if (o % s == 2) {
+//       break;
+//     }
+//   }
+// } else if (o % s == 0) {
+//   counter = 0;
+// }
+
+// console.log(counter);
+
+// twice = (o - s) * 2;
+// twice < 0 ? twice * -1 : twice;
+
+///////////////////
+// ime = "Johan Jonino";
+// jojo = ime.split(" ");
+// jo1 = ime[0].toUpperCase();
+// jo2 = ime[1].toUpperCase();
+// jb1 = false;
+// jb2 = false;
+
+// if (jojo.lenght < 2) {
+//   return false;
+// } else {
+//   if (jo1[0] == "J" && jo1[1] == "O") {
+//     jb1 = true;
+//   }
+// }
+
+//////////////////////////////////////////////////////////////////// COUNT THE MONKEYS
+function monkeyCount(n) {
+  var monkeys = [];
+  for (var i = 1; i < n + 1; i++) {
+    monkeys.push(i);
+  }
+  return monkeys;
+}
