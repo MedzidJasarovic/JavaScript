@@ -306,10 +306,21 @@
 // }
 
 //////////////////////////////////////////////////////////////////// COUNT THE MONKEYS
-function monkeyCount(n) {
-  var monkeys = [];
-  for (var i = 1; i < n + 1; i++) {
-    monkeys.push(i);
-  }
-  return monkeys;
+// function monkeyCount(n) {
+//   var monkeys = [];
+//   for (var i = 1; i < n + 1; i++) {
+//     monkeys.push(i);
+//   }
+//   return monkeys;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////String incrementer 5kyu
+
+function incrementString(strng) {
+  return strng.replace(/\d$/, (match) => {
+    if (!match) return 1;
+    const numStr = String(parseInt(match) + 1);
+    const diff = match.length - numStr.length;
+    return diff > 0 ? "0".repeat(diff) + numStr : numStr;
+  });
 }
