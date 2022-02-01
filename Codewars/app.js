@@ -316,11 +316,26 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////String incrementer 5kyu
 
-function incrementString(strng) {
-  return strng.replace(/\d$/, (match) => {
-    if (!match) return 1;
-    const numStr = String(parseInt(match) + 1);
-    const diff = match.length - numStr.length;
-    return diff > 0 ? "0".repeat(diff) + numStr : numStr;
-  });
+// function incrementString(strng) {
+//   return strng.replace(/\d$/, (match) => {
+//     if (!match) return 1;
+//     const numStr = String(parseInt(match) + 1);
+//     const diff = match.length - numStr.length;
+//     return diff > 0 ? "0".repeat(diff) + numStr : numStr;
+//   });
+// }
+
+///////////////////////////////////////////////////////REMOVE VOVELS
+
+function shortcut(string) {
+  let vowels = "aeiou";
+
+  let result = [];
+
+  for (let i = 0; i < string.length; i++) {
+    if (!vowels.includes(string[i])) {
+      result.push(string[i]);
+    }
+  }
+  return result.join("");
 }
