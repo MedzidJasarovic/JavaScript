@@ -327,15 +327,69 @@
 
 ///////////////////////////////////////////////////////REMOVE VOVELS
 
-function shortcut(string) {
-  let vowels = "aeiou";
+// function shortcut(string) {
+//   let vowels = "aeiou";
 
-  let result = [];
+//   let result = [];
 
-  for (let i = 0; i < string.length; i++) {
-    if (!vowels.includes(string[i])) {
-      result.push(string[i]);
+//   for (let i = 0; i < string.length; i++) {
+//     if (!vowels.includes(string[i])) {
+//       result.push(string[i]);
+//     }
+//   }
+//   return result.join("");
+// }
+
+// words = ["one", "two", "", "three", "four", "", ""];
+// w = [];
+// ar1 = [];
+// ar2 = [];
+// if (words == []) {
+//   console.log("");
+// } else {
+//   for (i = 0; i < words.length; i++) {
+//     if (words[i] != "") {
+//       w.push(words[i]);
+//     }
+//   }
+// }
+// if (w.length == 1) {
+//   return w.join("");
+// } else if (w.length == 2) {
+//   return w.join(" and ");
+// } else if (w.length >= 3) {
+//   for (i = 0; i < w.length - 1; i++) {
+//     ar1.push(w[i]).join(", ");
+//     ar2.push(w[w.length - 1]).join("");
+//   }
+//   return ar1 + " and " + ar2;
+// }
+
+words = ["one", "two", "", "three", "four", "", ""];
+w = [];
+ar1 = [];
+ar2 = [];
+a3 = "";
+if (words == []) {
+  console.log("");
+} else {
+  for (i = 0; i < words.length; i++) {
+    if (words[i] != "") {
+      w.push(words[i]);
     }
   }
-  return result.join("");
+}
+if (w.length == 1) {
+  console.log(w.join(""));
+} else if (w.length == 2) {
+  console.log(w.join(" and "));
+} else if (w.length >= 3) {
+  for (i = 0; i < w.length - 1; i++) {
+    ar1.push(w[i]);
+    console.log(ar1);
+  }
+  //   ar1.join(", ");
+  ar2.push(w[w.length - 1]);
+  ar2.join("");
+  console.log(ar1.join(", ") + " and " + ar2);
 }
