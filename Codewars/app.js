@@ -364,32 +364,64 @@
 //   }
 //   return ar1 + " and " + ar2;
 // }
+///////////////////////////////////////////////////////////////IZMEDJU SVAKE DRUGE PRECI STAVITI ZAREZ A IZMEDJU 2 POSLEDNJE and
+// words = ["one", "two", "", "three", "four", "", ""];
+// w = [];
+// ar1 = [];
+// ar2 = [];
+// a3 = "";
+// if (words == []) {
+//   console.log("");
+// } else {
+//   for (i = 0; i < words.length; i++) {
+//     if (words[i] != "") {
+//       w.push(words[i]);
+//     }
+//   }
+// }
+// if (w.length == 1) {
+//   console.log(w.join(""));
+// } else if (w.length == 2) {
+//   console.log(w.join(" and "));
+// } else if (w.length >= 3) {
+//   for (i = 0; i < w.length - 1; i++) {
+//     ar1.push(w[i]);
+//     console.log(ar1);
+//   }
+//   //   ar1.join(", ");
+//   ar2.push(w[w.length - 1]);
+//   ar2.join("");
+//   console.log(ar1.join(", ") + " and " + ar2);
+// }
 
-words = ["one", "two", "", "three", "four", "", ""];
-w = [];
-ar1 = [];
-ar2 = [];
-a3 = "";
-if (words == []) {
-  console.log("");
-} else {
-  for (i = 0; i < words.length; i++) {
-    if (words[i] != "") {
-      w.push(words[i]);
+///////////////////////////////////////////////////////////////////////////////////////////WHOOO LIKES IT 6KYU
+function likes(names) {
+  let ljudi = names.length - 2;
+  a1 = [];
+  a2 = [];
+
+  if (names.length == 0) {
+    return "no one likes this";
+  } else if (names.length == 1) {
+    return names.join("") + " likes this";
+  } else if (names.length == 2) {
+    return names.join(" and ") + " like this";
+  } else if (names.length == 3) {
+    for (i = 0; i < names.length - 1; i++) {
+      a1.push(names[i]);
     }
+
+    a2.push(names[names.length - 1]);
+    a2.join("");
+    return a1.join(", ") + " and " + a2 + " like this";
+  } else if (names.length > 3) {
+    return (
+      names[0].toString() +
+      ", " +
+      names[1].toString() +
+      " and " +
+      ljudi +
+      " others like this"
+    );
   }
-}
-if (w.length == 1) {
-  console.log(w.join(""));
-} else if (w.length == 2) {
-  console.log(w.join(" and "));
-} else if (w.length >= 3) {
-  for (i = 0; i < w.length - 1; i++) {
-    ar1.push(w[i]);
-    console.log(ar1);
-  }
-  //   ar1.join(", ");
-  ar2.push(w[w.length - 1]);
-  ar2.join("");
-  console.log(ar1.join(", ") + " and " + ar2);
 }
