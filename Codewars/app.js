@@ -395,33 +395,33 @@
 // }
 
 ///////////////////////////////////////////////////////////////////////////////////////////WHOOO LIKES IT 6KYU
-function likes(names) {
-  let ljudi = names.length - 2;
-  a1 = [];
-  a2 = [];
+// function likes(names) {
+//   let ljudi = names.length - 2;
+//   a1 = [];
+//   a2 = [];
 
-  if (names.length == 0) {
-    return "no one likes this";
-  } else if (names.length == 1) {
-    return names.join("") + " likes this";
-  } else if (names.length == 2) {
-    return names.join(" and ") + " like this";
-  } else if (names.length == 3) {
-    for (i = 0; i < names.length - 1; i++) {
-      a1.push(names[i]);
-    }
+//   if (names.length == 0) {
+//     return "no one likes this";
+//   } else if (names.length == 1) {
+//     return names.join("") + " likes this";
+//   } else if (names.length == 2) {
+//     return names.join(" and ") + " like this";
+//   } else if (names.length == 3) {
+//     for (i = 0; i < names.length - 1; i++) {
+//       a1.push(names[i]);
+//     }
 
-    a2.push(names[names.length - 1]);
-    a2.join("");
-    return a1.join(", ") + " and " + a2 + " like this";
-  } else if (names.length > 3) {
-    return (
-      names[0].toString() +
-      ", " +
-      names[1].toString() +
-      " and " +
-      ljudi +
-      " others like this"
-    );
-  }
-}
+//     a2.push(names[names.length - 1]);
+//     a2.join("");
+//     return a1.join(", ") + " and " + a2 + " like this";
+//   } else if (names.length > 3) {
+//     return (
+//       names[0].toString() +
+//       ", " +
+//       names[1].toString() +
+//       " and " +
+//       ljudi +
+//       " others like this"
+//     );
+//   }
+// }

@@ -12,3 +12,21 @@
 //   console.log(a + b);
 // }
 // summ(3, 5);
+
+////////////////////////////////////////////////////Deklaracocija funkcija
+
+function mojaFunkcija() {
+  console.log(" Moja fukica");
+}
+
+b = function () {
+  console.log(" b b b b b b b b b");
+};
+
+b();
+
+c = () => {
+  console.log("C c c c c c c ");
+};
+
+c();
