@@ -425,3 +425,13 @@
 //     );
 //   }
 // }
+
+///////////////////////////////////////////////////// 3kyu HELP THE GENERAL DECODE SECRET ENEMY MESSAGES(OVO JE SAMO POKUSAJ!!!)
+
+device.decode = function (w) {
+  for (i = 0; i < 65; i++) {
+    w = device.encode(w);
+  }
+  ("");
+  return w;
+};
