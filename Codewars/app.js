@@ -428,10 +428,37 @@
 
 ///////////////////////////////////////////////////// 3kyu HELP THE GENERAL DECODE SECRET ENEMY MESSAGES(OVO JE SAMO POKUSAJ!!!)
 
+////// PRVO RESENJE
+
+// device.decode = function (w) {  //////MOE RESENJE NAJBOLJE
+//   for (i = 0; i < 65; i++) {
+//     w = device.encode(w);
+//   }
+//   ("");
+//   return w;
+// };
+
+///////////////////////////////////////// DRUGO RESENJE
+
+var chrs = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.0123456789? ";
+
+function build_alphabets_table() {
+  return chrs.split("").map(function (c) {
+    return device.encode(new Array(67).join(c));
+  });
+}
+
 device.decode = function (w) {
-  for (i = 0; i < 65; i++) {
-    w = device.encode(w);
-  }
-  ("");
-  return w;
+  var tbl = build_alphabets_table();
+  return w.replace(/./g, function (c, i) {
+    return (
+      chrs[
+        tbl
+          .map(function (a) {
+            return a[i % 66];
+          })
+          .indexOf(c)
+      ] || c
+    );
+  });
 };
