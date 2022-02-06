@@ -464,12 +464,23 @@
 // };
 
 ///////////////////////////////////////////////////////////SQUARE EVERY DIGIT
-rezultat = "";
+// rezultat = "";
 
-num = num.toString().split("");
-kvadriran = [];
-for (i = 0; i < num.length; i++) {
-  kvadriran.push(num[i] * num[i]);
-  rezultat += kvadriran[i].toString();
+// num = num.toString().split("");
+// kvadriran = [];
+// for (i = 0; i < num.length; i++) {
+//   kvadriran.push(num[i] * num[i]);
+//   rezultat += kvadriran[i].toString();
+// }
+// return rezultat.to();
+
+////////////////////////////////////////////////////////////////////MUMBLING
+s = "abcde";
+rezultat = [];
+s = s.toUpperCase().split("");
+for (i = 0; i < s.length; i++) {
+  for (j = 0; j < i + 1; j++) {
+    rezultat.push(s[i]);
+  }
 }
-return rezultat.to();
+console.log(rezultat);
