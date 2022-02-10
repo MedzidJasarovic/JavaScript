@@ -516,22 +516,36 @@
 
 //////////////////////////////////////CAT AND DOG YEARS
 
-var humanYearsCatYearsDogYears = function (human) {
-  dog = 0;
-  cat = 0;
-  result = [];
-  if (human == 1) {
-    cat = 15;
-    dog = 15;
-  } else if (human == 2) {
-    cat = 24;
-    dog = 24;
-  } else if (human > 2) {
-    cat = 24 + (human - 2) * 4;
-    dog = 24 + (human - 2) * 5;
+// var humanYearsCatYearsDogYears = function (human) {
+//   dog = 0;
+//   cat = 0;
+//   result = [];
+//   if (human == 1) {
+//     cat = 15;
+//     dog = 15;
+//   } else if (human == 2) {
+//     cat = 24;
+//     dog = 24;
+//   } else if (human > 2) {
+//     cat = 24 + (human - 2) * 4;
+//     dog = 24 + (human - 2) * 5;
+//   }
+//   result.push(human);
+//   result.push(cat);
+//   result.push(dog);
+//   return result;
+// };
+
+////////////////////////////////MUMBLING
+function accum(s) {
+  var letters = s.split(""),
+    words = [];
+
+  for (var i = 0; i < letters.length; i++) {
+    words.push(
+      letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase())
+    );
   }
-  result.push(human);
-  result.push(cat);
-  result.push(dog);
-  return result;
-};
+
+  return words.join("-");
+}
