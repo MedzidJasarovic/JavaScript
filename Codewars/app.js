@@ -537,15 +537,47 @@
 // };
 
 ////////////////////////////////MUMBLING
-function accum(s) {
-  var letters = s.split(""),
-    words = [];
+// function accum(s) {
+//   var letters = s.split(""),
+//     words = [];
 
-  for (var i = 0; i < letters.length; i++) {
-    words.push(
-      letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase())
-    );
+//   for (var i = 0; i < letters.length; i++) {
+//     words.push(
+//       letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase())
+//     );
+//   }
+
+//   return words.join("-");
+// }
+
+function mod(x, y) {
+  //works as expected for negative x
+  var sign = y < 0 ? -1 : 1;
+  while (x < 0) {
+    x += sign * y;
   }
-
-  return words.join("-");
+  return x % y;
 }
+
+device.decode = function (string) {
+  var substitutions =
+    "abdhpF,82QsLirJejtNmzZKgnB3SwTyXG ?.6YIcflxVC5WE94UA1OoD70MkvRuPqH"; // length = 66
+  return [].map
+    .call(string, function (chr, idx) {
+      var pos = substitutions.indexOf(chr);
+      return pos == -1 ? chr : substitutions[mod(pos - 1 - idx, 66)];
+    })
+    .join("");
+};
+
+//for educational purposes, the encode function
+encode = function (string) {
+  var substitutions =
+    "abdhpF,82QsLirJejtNmzZKgnB3SwTyXG ?.6YIcflxVC5WE94UA1OoD70MkvRuPqH"; // length = 66
+  return [].map
+    .call(string, function (chr, idx) {
+      var pos = substitutions.indexOf(chr);
+      return pos == -1 ? chr : substitutions[(pos + 1 + idx) % 66];
+    })
+    .join("");
+};
