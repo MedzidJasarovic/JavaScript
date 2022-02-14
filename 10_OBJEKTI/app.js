@@ -17,13 +17,29 @@
 // }
 
 ///////////////////////////// OBJEKTI SU REFERENTN TIPOVI PODATAKA ///////IDI NA W3Resource
-function covek() {
-  const osoba = {};
-  osoba.ime = prompt("Unesite ime");
-  osoba.prezime = prompt("Unesite prezime");
-  osoba.godine = prompt("Unesite godine");
-  osoba.visina = prompt("Unesite visinu");
-  return osoba;
-}
+// function covek() {
+//   const osoba = {};
+//   osoba.ime = prompt("Unesite ime");
+//   osoba.prezime = prompt("Unesite prezime");
+//   osoba.godine = prompt("Unesite godine");
+//   osoba.visina = prompt("Unesite visinu");
+//   return osoba;
+// }
 
-console.log(covek());
+// console.log(covek());
+
+/////////////////////////////////////////////////////////////////////////
+
+// const car = {
+//   name: "Audi",
+//   model: "A7",
+// };
+
+// const keys = Object
+
+// auto = {
+//   ime: "",
+//   marka: "",
+//   enterior: "",
+//   exterior: "",
+// };
