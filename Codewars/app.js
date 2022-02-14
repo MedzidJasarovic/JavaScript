@@ -585,14 +585,8 @@
 //////////////////////////////////////////////////////////////////////////// BILIARDS TRYANGLE
 
 function pyramid(balls) {
-  red = 1;
+  red = 0;
   potrebno = 1;
-  while (balls > 0) {
-    balls -= potrebno;
-    potrebno++;
-    if (balls - potrebno >= 0) {
-      red++;
-    }
-  }
-  return red;
+
+  13;
 }
