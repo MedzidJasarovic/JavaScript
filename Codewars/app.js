@@ -614,22 +614,22 @@
 
 ////////////////////////////////////////////////// ROMAN TO INT
 
-var romanNumerals = {
-  M: 1000,
-  D: 500,
-  C: 100,
-  L: 50,
-  X: 10,
-  V: 5,
-  I: 1,
-};
-roman = roman.split("");
-var m = 0;
-n = roman[0];
-roman.reduce(function (pre, item, index) {
-  var j = romanNumerals[n] || 0;
-  var k = romanNumerals[item] || 0;
-  m += j < k ? -j : j;
-  n = item;
-});
-return m + romanNumerals[roman[roman.length - 1]];
+// var romanNumerals = {
+//   M: 1000,
+//   D: 500,
+//   C: 100,
+//   L: 50,
+//   X: 10,
+//   V: 5,
+//   I: 1,
+// };
+// roman = roman.split("");
+// var m = 0;
+// n = roman[0];
+// roman.reduce(function (pre, item, index) {
+//   var j = romanNumerals[n] || 0;
+//   var k = romanNumerals[item] || 0;
+//   m += j < k ? -j : j;
+//   n = item;
+// });
+// return m + romanNumerals[roman[roman.length - 1]];
