@@ -588,26 +588,48 @@
 
 //////////////////////////////////////////////////////////////////////PERMUTATIONS
 
-function swap(arr, i, j) {
-  [arr[i], arr[j]] = [arr[j], arr[i]];
-}
+// function swap(arr, i, j) {
+//   [arr[i], arr[j]] = [arr[j], arr[i]];
+// }
 
-function genPerms(chars, left, right, set) {
-  if (left === right) {
-    set.add(chars.join(""));
-  } else {
-    for (let i = left; i <= right; i++) {
-      swap(chars, left, i);
-      genPerms(chars, left + 1, right, set);
-      swap(chars, left, i);
-    }
-  }
-}
+// function genPerms(chars, left, right, set) {
+//   if (left === right) {
+//     set.add(chars.join(""));
+//   } else {
+//     for (let i = left; i <= right; i++) {
+//       swap(chars, left, i);
+//       genPerms(chars, left + 1, right, set);
+//       swap(chars, left, i);
+//     }
+//   }
+// }
 
-function permutations(string) {
-  const N = string.length;
-  const chars = string.split("");
-  const set = new Set();
-  genPerms(chars, 0, N - 1, set);
-  return Array.from(set);
-}
+// function permutations(string) {
+//   const N = string.length;
+//   const chars = string.split("");
+//   const set = new Set();
+//   genPerms(chars, 0, N - 1, set);
+//   return Array.from(set);
+// }
+
+////////////////////////////////////////////////// ROMAN TO INT
+
+var romanNumerals = {
+  M: 1000,
+  D: 500,
+  C: 100,
+  L: 50,
+  X: 10,
+  V: 5,
+  I: 1,
+};
+roman = roman.split("");
+var m = 0;
+n = roman[0];
+roman.reduce(function (pre, item, index) {
+  var j = romanNumerals[n] || 0;
+  var k = romanNumerals[item] || 0;
+  m += j < k ? -j : j;
+  n = item;
+});
+return m + romanNumerals[roman[roman.length - 1]];
