@@ -33,13 +33,28 @@
 
 ///////////////////////////////////////////////////CALL BACK FUNKCIJAA
 
-let number = [45, 11, 2, 1, 69, 5, 22, 12, 21, 333, 44, 6969, 696969];
-var novi = [];
-function kvadriraj(el, indeks) {
-  if (el > 20) {
-    novi.push(el);
+///CALLBACK(POZOVI KASNIJE) JE FUNKCIJA KOJU DEFINISEMO A NAKON TOGA, KAD JE POTREBNO, JE SALJEMO NEGDE KAO ARGUMENT
+
+// let tekst = "the quick brown fox";
+// tekst = tekst.split("");
+// novi = [];
+// function kvadriraj(el, indeks) {
+//   if (indeks % 2 === 0) {
+//     novi.push(el.toLowerCase());
+//   } else {
+//     novi.push(el.toUpperCase());
+//   }
+// }
+
+// tekst.forEach(kvadriraj);
+// console.log(novi.join(""));
+
+const arr = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+zleVariable = 0;
+function isFalsey(el) {
+  if (Boolean(el) === false) {
+    zleVariable++;
   }
 }
-
-number.forEach(kvadriraj);
-console.log(novi);
+arr.forEach(isFalsey);
+console.log(zleVariable);
