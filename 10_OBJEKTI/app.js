@@ -106,25 +106,27 @@
 
 // console.log(punoletan(student));
 
-auto = {
-  marka: "Audi",
-  model: "RS7",
-  godina: 2021,
-  km: 1003,
-  zapremina: "4000cc",
-  snaga: "519hp / 387 KW",
-};
-key = [];
-rezultat = [];
+// auto = {
+//   marka: "Audi",
+//   model: "RS7",
+//   godina: 2021,
+//   km: 1003,
+//   zapremina: "4000cc",
+//   snaga: "519hp / 387 KW",
+// };
+// key = [];
+// rezultat = [];
 
-key.push(Object.keys(auto));
-velju = [];
-velju.push(Object.values(auto));
+// key.push(Object.keys(auto));
+// velju = [];
+// velju.push(Object.values(auto));
 
-for (i = 0; i < key.length; i++) {
-  par = [];
-  par.push(key[i]);
-  par.push(velju[i]);
-  rezultat.push(par);
-}
-console.log(rezultat);
+// for (i = 0; i < key.length; i++) {
+//   par = [];
+//   par.push(key[i]);
+//   par.push(velju[i]);
+//   rezultat.push(par);
+// }
+// console.log(rezultat);
+
+// rezultat.forEach()
