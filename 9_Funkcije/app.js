@@ -156,3 +156,75 @@ console.log(
     },
   ])
 );
+
+/////////////////////////////////////////////////////////// PROVERI DA LI SU UNDERAGE
+function isUnderage(arr) {
+  return arr.map((el) => {
+    if (el.age >= 18) {
+      return el.name + " can buy marihuana";
+    } else {
+      return el.name + " cant buy marihuana";
+    }
+  });
+}
+console.log(
+  isUnderage([
+    {
+      name: "Hazbula",
+      age: 19,
+    },
+    {
+      name: "Dzadzo Dzake",
+      age: 11,
+    },
+  ])
+);
+
+/////////////////////////////////////////////////////////////////IZREDJAJ PODATKE
+
+// function namesOnly(arr) {
+//   return arr.map((el) => {
+//     return "Zove se " + el.name + " i ima " + el.age + " godina.";
+//   });
+// }
+// console.log(
+//   namesOnly([
+//     {
+//       name: "Hazbula",
+//       age: 19,
+//     },
+//     {
+//       name: "Dzadzo Dzake",
+//       age: 11,
+//     },
+//   ])
+// );
+//////////////////////////////////////KREIRAJ FUNKCIJU KOJA UZIMA  STRING I PRAVI INICIJALE
+/////////(gago Meki ZAzo fr ===> G.M.Z.F.)
+
+reci = "U Kraju zvali su me Suki, brz sam ko SUZUKI brm";
+reci = reci.split(" ");
+
+function napraviInicijale(str) {
+  return str.map((el) => {
+    el = el.toLowerCase();
+    el = el[0].toUpperCase();
+    el += ".";
+    return el;
+  });
+}
+console.log(napraviInicijale(reci).join(""));
+
+/////////////////////ZA STRING BROJEVA RETURNAJ True ako je paran a false ako je neparan
+
+brojke = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function toBool(nmb) {
+  return nmb.map((el) => {
+    if (el % 2 == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+console.log(toBool(brojke));
