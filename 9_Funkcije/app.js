@@ -86,12 +86,73 @@
 // console.log(dupli);
 
 ///////////////////////////////////////////UZI ARRAY BROJEVA I KONVERTUJ IH U STRING
-brojevi = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9];
-string = [];
-function toString(arr) {
-  string = arr.map((el) => {
-    return el.toString();
+// brojevi = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9];
+// string = [];
+// function toString(arr) {
+//   string = arr.map((el) => {
+//     return el.toString();
+//   });
+// }
+// toString(brojevi);
+// console.log(string);
+
+//////////////////////////////////// Imena
+// fixed = [];
+// imena = ["mips", "dips", "kvips", "svips", "krips", "HAHvcssds", "SVEVELIKA"];
+// function popravi(arr) {
+//   fixed = arr.map((el) => {
+//     elementic = "";
+//     a = el.toLowerCase();
+//     for (i = 0; i < a.length; i++) {
+//       if (i == 0) {
+//         elementic += a[0].toUpperCase();
+//       } else {
+//         elementic += a[i];
+//       }
+//     }
+//     return elementic;
+//   });
+// }
+// popravi(imena);
+// console.log(fixed);
+
+// ILI ILI ILI ILI ILI
+
+// function capitalizeNames(arr) {
+//   return arr.map((el) => {
+//     el = el.toLowerCase();
+//     el = el[0].toUpperCase() + el.slice(1);
+//     return el;
+//   });
+// }
+// console.log(
+//   capitalizeNames([
+//     "mips",
+//     "dips",
+//     "kvips",
+//     "svips",
+//     "krips",
+//     "HAHvcssds",
+//     "SVEVELIKA",
+//   ])
+// );
+
+// /////////////////////////////////////////////  DAJ ARRAY IMENA
+
+function namesOnly(arr) {
+  return arr.map((el) => {
+    return el.name;
   });
 }
-toString(brojevi);
-console.log(string);
+console.log(
+  namesOnly([
+    {
+      name: "Hazbula",
+      age: 19,
+    },
+    {
+      name: "Dzadzo Dzake",
+      age: 11,
+    },
+  ])
+);
