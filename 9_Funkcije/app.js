@@ -49,12 +49,49 @@
 // tekst.forEach(kvadriraj);
 // console.log(novi.join(""));
 
-const arr = [NaN, 0, 15, false, -22, "", undefined, 47, null];
-zleVariable = 0;
-function isFalsey(el) {
-  if (Boolean(el) === false) {
-    zleVariable++;
-  }
+// const arr = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+// zleVariable = 0;
+// function isFalsey(el) {
+//   if (Boolean(el) === false) {
+//     zleVariable++;
+//   }
+// }
+// arr.forEach(isFalsey);
+// console.log(zleVariable);
+
+//////////////////////////////////////////////////////// MAP // MAP NE DIRA POSTOJECI ARRAY
+//VEC KREIRA NOVI ARRAY I PUSH
+
+// const a=[1,2,3,4]
+
+// const b=a.map((el,i)=>{
+// return el+i})
+// console.log(b)
+///////////////////////////////////////////////////
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const kvadriran = niz.map((el) => {
+//   return el ** 2;
+// });
+// console.log(kvadriran);
+
+///////////////////////////////////////  FUNKCIJA KOJA DUPLIRA SVE CLANOVE
+// dupli = [];
+// function dupliraj(arr) {
+//   dupli = arr.map((el) => {
+//     return el * 2;
+//   });
+// }
+// niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// dupliraj(niz);
+// console.log(dupli);
+
+///////////////////////////////////////////UZI ARRAY BROJEVA I KONVERTUJ IH U STRING
+brojevi = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9];
+string = [];
+function toString(arr) {
+  string = arr.map((el) => {
+    return el.toString();
+  });
 }
-arr.forEach(isFalsey);
-console.log(zleVariable);
+toString(brojevi);
+console.log(string);
