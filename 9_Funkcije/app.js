@@ -139,46 +139,46 @@
 
 // /////////////////////////////////////////////  DAJ ARRAY IMENA
 
-function namesOnly(arr) {
-  return arr.map((el) => {
-    return el.name;
-  });
-}
-console.log(
-  namesOnly([
-    {
-      name: "Hazbula",
-      age: 19,
-    },
-    {
-      name: "Dzadzo Dzake",
-      age: 11,
-    },
-  ])
-);
+// function namesOnly(arr) {
+//   return arr.map((el) => {
+//     return el.name;
+//   });
+// }
+// console.log(
+//   namesOnly([
+//     {
+//       name: "Hazbula",
+//       age: 19,
+//     },
+//     {
+//       name: "Dzadzo Dzake",
+//       age: 11,
+//     },
+//   ])
+// );
 
 /////////////////////////////////////////////////////////// PROVERI DA LI SU UNDERAGE
-function isUnderage(arr) {
-  return arr.map((el) => {
-    if (el.age >= 18) {
-      return el.name + " can buy marihuana";
-    } else {
-      return el.name + " cant buy marihuana";
-    }
-  });
-}
-console.log(
-  isUnderage([
-    {
-      name: "Hazbula",
-      age: 19,
-    },
-    {
-      name: "Dzadzo Dzake",
-      age: 11,
-    },
-  ])
-);
+// function isUnderage(arr) {
+//   return arr.map((el) => {
+//     if (el.age >= 18) {
+//       return el.name + " can buy marihuana";
+//     } else {
+//       return el.name + " cant buy marihuana";
+//     }
+//   });
+// }
+// console.log(
+//   isUnderage([
+//     {
+//       name: "Hazbula",
+//       age: 19,
+//     },
+//     {
+//       name: "Dzadzo Dzake",
+//       age: 11,
+//     },
+//   ])
+// );
 
 /////////////////////////////////////////////////////////////////IZREDJAJ PODATKE
 
@@ -202,29 +202,136 @@ console.log(
 //////////////////////////////////////KREIRAJ FUNKCIJU KOJA UZIMA  STRING I PRAVI INICIJALE
 /////////(gago Meki ZAzo fr ===> G.M.Z.F.)
 
-reci = "U Kraju zvali su me Suki, brz sam ko SUZUKI brm";
-reci = reci.split(" ");
+// reci = "U Kraju zvali su me Suki, brz sam ko SUZUKI brm";
+// reci = reci.split(" ");
 
-function napraviInicijale(str) {
-  return str.map((el) => {
-    el = el.toLowerCase();
-    el = el[0].toUpperCase();
-    el += ".";
-    return el;
-  });
-}
-console.log(napraviInicijale(reci).join(""));
+// function napraviInicijale(str) {
+//   return str.map((el) => {
+//     el = el.toLowerCase();
+//     el = el[0].toUpperCase();
+//     el += ".";
+//     return el;
+//   });
+// }
+// console.log(napraviInicijale(reci).join(""));
 
 /////////////////////ZA STRING BROJEVA RETURNAJ True ako je paran a false ako je neparan
 
-brojke = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-function toBool(nmb) {
-  return nmb.map((el) => {
-    if (el % 2 == 0) {
-      return true;
-    } else {
-      return false;
-    }
-  });
+// brojke = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function toBool(nmb) {
+//   return nmb.map((el) => {
+//     if (el % 2 == 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   });
+// }
+// console.log(toBool(brojke));
+
+///////////////////////////////////////////////////FILTER///////////////////////
+///////////////////////////////////////////////////FILTER///////////////////////
+///////////////////////////////////////////////////FILTER///////////////////////
+///////////////////////////////////////////////////FILTER////////////////////////
+///////////////////////////////////////////////////FILTER///////////////////////
+///////////////////////////////////////////////////FILTER///////////////////////
+
+//  FILTER SLUZI DA PRODJE KROZ ARRAY I DA RETURNA SAMO ONE ELEMENTE
+// KOJI ISPUNJAVAJU NEKI USLOV, TJ CALLBACK
+
+// const numbers = [1, 2, 3, 45, 5, 6, 7, 8, 9, 0, 22, 3, 4, 2234, 5324];
+// const parni = numbers.filter((el) => {
+//   return el % 2 == 0;
+// });
+// console.log(parni);
+
+////////////////// RETURNAJ ELEMENTE 5 ili vece
+
+// function fiveOrGreater(arr) {
+//   const veci = arr.filter((el) => {
+//     return el >= 5;
+//   });
+//   return veci;
+// }
+
+// console.log(fiveOrGreater([1, 3, 4, 777, 123213, 11]));
+
+// mozemo da napisemo return arr.filter(el=> el>=5)
+
+/////////////////////////////////// returnaj ako el ima 5 ili manje karaktera
+
+// function fiveCharacterOrFewerOnly(arr) {
+//   return arr.filter((el) => el.length <= 5);
+// }
+// console.log(
+//   fiveCharacterOrFewerOnly(["55555", "jedandvatri", "cetiri", "pet"])
+// );
+
+//////////////////////////////////////////////////////// RETURNAJ MEMBERE KOJI MOGU DA UDJU U KLUB
+
+// function iluminati(arr) {
+//   return arr.filter((el) => !el.member);
+// }
+// console.log(
+//   iluminati([
+//     { name: "hasbula", member: true },
+//     { name: "Miljena", member: false },
+//   ])
+// );
+
+///////////////////////////////////////////////////////////////// FILTRIRAJ SAMO ELEMENTE KOJI SE ZAVRSAVAJU NA PARAN INDEKS
+
+// function parni(arr) {
+//   return arr.filter((el) => !(el.length % 2));
+// }
+// console.log(parni(["1", "22", "333", "4444", "5555"]));
+
+//////////////////////////////////////////////EVERY////////////////EVERY/////////////////EVERY///
+
+//////////////////////////////////////////////EVERY////////////////EVERY/////////////////EVERY///
+
+//////////////////////////////////////////////EVERY////////////////EVERY/////////////////EVERY///
+
+//////////////////////////////////////////////EVERY////////////////EVERY/////////////////EVERY///
+
+//////////////////////////////////////////////EVERY////////////////EVERY/////////////////EVERY///
+
+// EVery prolazi kroz array i proverava da li svi elementi iz arraya ispunjavaju neki uslov , returna true/false values
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 6, 87, 8, 1];
+// const isAllHigh = numbers.every((value) => {
+//   return value >= 1;
+// });
+// console.log(isAllHigh);
+
+//////////////////////////////////////////////////////////// proveri da li su svi clanvi stripaaea
+
+// function clan(arr) {
+//   return arr.every((el) => el.member);
+// }
+// console.log(
+//   clan([
+//     { name: "hasbula", member: true },
+//     { name: "Miljena", member: true },
+//   ])
+// );
+
+/////////////////////////////SOME//////////////////////SOME////////////////////SOME//////////////////
+
+/////////////////////////////SOME//////////////////////SOME////////////////////SOME//////////////////
+
+/////////////////////////////SOME//////////////////////SOME////////////////////SOME//////////////////
+
+/////////////////////////////SOME//////////////////////SOME////////////////////SOME//////////////////
+
+/////////////////////////////SOME//////////////////////SOME////////////////////SOME//////////////////
+
+/////////////////////////////SOME//////////////////////SOME////////////////////SOME//////////////////
+
+//Proverava da li postoji bilo koji clan u arrayu koji ispunjava dati callback / uslov
+
+broj = [22, 31, 1, 341, 213, 1];
+function isAnyHigh(arr) {
+  return arr.some((el) => el % 2);
 }
-console.log(toBool(brojke));
+console.log(isAnyHigh(broj));
