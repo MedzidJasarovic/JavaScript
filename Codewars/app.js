@@ -633,3 +633,31 @@
 //   n = item;
 // });
 // return m + romanNumerals[roman[roman.length - 1]];
+
+/////////////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// desetiran = [];
+
+// function desetka(el) {
+//   desetiran.push(el * 10);
+// }
+
+// numbers.forEach(desetka);
+// console.log(desetiran);
+
+//
+//
+//
+//
+//
+//
+//
+//
+
+const furits=["jabuka","tresnja","kiwi","tuki","muki","avocado","pomegranate"]
+const short=[]
+function shortFruits(el)
+{
+    if
+
+}
