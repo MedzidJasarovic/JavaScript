@@ -654,10 +654,10 @@
 //
 //
 
-const furits=["jabuka","tresnja","kiwi","tuki","muki","avocado","pomegranate"]
-const short=[]
-function shortFruits(el)
-{
-    if
+// const furits=["jabuka","tresnja","kiwi","tuki","muki","avocado","pomegranate"]
+// const short=[]
+// function shortFruits(el)
+// {
+//     if
 
-}
+// }

@@ -330,8 +330,24 @@
 
 //Proverava da li postoji bilo koji clan u arrayu koji ispunjava dati callback / uslov
 
-broj = [22, 31, 1, 341, 213, 1];
-function isAnyHigh(arr) {
-  return arr.some((el) => el % 2);
+// broj = [22, 31, 1, 341, 213, 1];
+// function isAnyHigh(arr) {
+//   return arr.some((el) => el % 2);
+// }
+// console.log(isAnyHigh(broj));
+
+////////////////////////////////////
+function fn(el) {
+  return el++;
 }
-console.log(isAnyHigh(broj));
+
+a = [
+  [1, 2, 3, 4],
+  [11, 12, 13, 14],
+  [23, 13, 51],
+];
+
+for (i = 0; i < a.length; i++) {
+  a[i].map(fn);
+}
+console.log(a);
