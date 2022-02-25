@@ -337,17 +337,37 @@
 // console.log(isAnyHigh(broj));
 
 ////////////////////////////////////
-function fn(el) {
-  return el++;
-}
+// function fn(el) {
+//   return el++;
+// }
 
-a = [
-  [1, 2, 3, 4],
-  [11, 12, 13, 14],
-  [23, 13, 51],
-];
+// a = [
+//   [1, 2, 3, 4],
+//   [11, 12, 13, 14],
+//   [23, 13, 51],
+// ];
 
-for (i = 0; i < a.length; i++) {
-  a[i].map(fn);
+// for (i = 0; i < a.length; i++) {
+//   a[i].map(fn);
+// }
+// console.log(a);
+///////////////////////////////////////////////////////////////
+function shifter(s) {
+  slova = ["H", "I", "N", "O", "S", "X", "Z", "M", "W"];
+  s = s.split(" ");
+  counterr = 0;
+
+  let p = [...new Set(s)];
+  for (i = 0; i < p.length; i++) {
+    counter = 0;
+    for (j = 0; j < p[i].length; j++) {
+      if (p[i][j].includes(slova.some)) {
+        counter++;
+        if (counter == p[i].length) {
+          counterr++;
+        }
+      }
+    }
+  }
+  return counterr;
 }
-console.log(a);
