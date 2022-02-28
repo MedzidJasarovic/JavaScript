@@ -352,22 +352,25 @@
 // }
 // console.log(a);
 ///////////////////////////////////////////////////////////////
-function shifter(s) {
-  slova = ["H", "I", "N", "O", "S", "X", "Z", "M", "W"];
-  s = s.split(" ");
-  counterr = 0;
+// function shifter(s) {
+// slova = ["H", "I", "N", "O", "S", "X", "Z", "M", "W"];
+//   s = s.split(" ");
+//   counterr = 0;
 
-  let p = [...new Set(s)];
-  for (i = 0; i < p.length; i++) {
-    counter = 0;
-    for (j = 0; j < p[i].length; j++) {
-      if (p[i][j].includes(slova.some)) {
-        counter++;
-        if (counter == p[i].length) {
-          counterr++;
-        }
-      }
-    }
-  }
-  return counterr;
-}
+//   let p = [...new Set(s)];
+//   for (i = 0; i < p.length; i++) {
+//     counter = 0;
+//     for (j = 0; j < p[i].length; j++) {
+//       if (p[i][j].includes(slova.some)) {
+//         counter++;
+//         if (counter == p[i].length) {
+//           counterr++;
+//         }
+//       }
+//     }
+//   }
+//   return counterr;
+// }
+// slova = ["H", "I", "N", "O", "S", "X", "Z", "M", "W"];
+// s = "BIMH XK OXQ Y ZI NE MXI OK N XM DS TMN WOJN MUUJR KWGNG";
+// s = s.split(" ");
