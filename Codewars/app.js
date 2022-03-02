@@ -664,17 +664,17 @@
 
 ///////////////////////////////////////////////////////////one one one one
 
-function consecutiveOnes(nums) {
-  nums = nums.join("");
-  if (!nums.includes("1")) {
-    return 0;
-  }
-  nums = nums.split("0");
-  max = 0;
-  for (i = 0; i < nums.length; i++) {
-    if (nums[i] > max) {
-      max = nums[i].length;
-    }
-  }
-  return max;
-}
+// function consecutiveOnes(nums) {
+//   nums = nums.join("");
+
+//   nums = nums.split("0");
+//   max = 0;
+//   for (i = 0; i < nums.length; i++) {
+//     if (nums[i] > max) {
+//       max = nums[i].length;
+//     }
+//   }
+//   return max;
+// }
+///////////////////
+console.log("Morao sam da komitam ");
