@@ -374,3 +374,7 @@
 // slova = ["H", "I", "N", "O", "S", "X", "Z", "M", "W"];
 // s = "BIMH XK OXQ Y ZI NE MXI OK N XM DS TMN WOJN MUUJR KWGNG";
 // s = s.split(" ");
+
+///////////////////////////////////////////////////////////////PROMISE NAM SLUZI DA NEKU RADNJU ZA KOJU NE ZNAMO KOLIKO CE DA
+/// TRAJE POSALJEMO NA WEB API NA IZBRSAVANJE I JER JE PROMISE(OBECANJE) ONA SE VRACA NAKON STO SE STACK OSOLODI
+//try catch then itd/....// ELABORIRAJ TRY CATCH lols balls
