@@ -423,13 +423,16 @@
 //   .catch(() => {
 //     console.log("Fetch failed");
 //   });
-// async function getData() {
-//   objekti = await fetch("https://jsonplaceholder.typicode.com/users").then();
-//   console.log(objekti);
-// }
-for (let i = 0; i < 3; i++) {
-  const log = () => {
-    console.log(i);
-  };
-  setTimeout(log, 100);
+async function getData() {
+  response = await fetch("https://jsonplaceholder.typicode.com/users");
+  responseJson = await response.json();
+  formatedUsers = responseJson.map((el) => el.name);
+  console.log(formatedUsers);
 }
+getData();
+// for (let i = 0; i < 3; i++) {
+//   const log = () => {
+//     console.log(i);
+//   };
+//   setTimeout(log, 100);
+// }
