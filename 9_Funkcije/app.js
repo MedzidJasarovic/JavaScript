@@ -407,10 +407,10 @@
 //
 //
 //
-// async function getData()
-// {
-// //     const response = await fetch("https://catfact.ninja/facts")
-// // }
+async function getData()
+{
+ const response = await fetch("https://catfact.ninja/facts")
+}
 // fetch("https://jsonplaceholder.typicode.com/users")
 //   .then((response) => {
 //     return response.json();

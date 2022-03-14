@@ -8,13 +8,21 @@
 // el.style.backgroundColor = "red";
 // el.style.background = "blue";
 // el.style.fontSize = "40px";
-const noJuda = document.getElementsByClassName("ww2");
-noJuda[0].style.background = "red";
-noJuda[1].style.background = "red";
 
-const juda = document.getElementById("jevrejskih1");
-juda.style.backgroundColor = "cyan";
-juda.style.fontSize = "10px";
+/////////////////////////////////////
+/////////////////////////////////////
 
-lupin = document.getElementsByTagName("div");
-lupin.style.background = "black";
+main = document.getElementById("main");
+async function getData() {
+  response = await fetch("https://jsonplaceholder.typicode.com/users");
+  responseJson = await response.json();
+  formatedUsers = responseJson.map((el) => el.name);
+  console.log(formatedUsers);
+  for (let i = 0; i < formatedUsers.length; i++) {
+    var element = document.createElement("h1");
+    element.innerText = formatedUsers[i];
+    main.appendChild(element);
+  }
+}
+
+getData();
