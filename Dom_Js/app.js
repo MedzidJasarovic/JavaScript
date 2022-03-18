@@ -43,18 +43,65 @@ function klik() {
     el.style.backgroundColor = "red";
     el.classList.add("Nucci");
   }
-  main = document.getElementById("main");
+  mainn = document.getElementById("mainn");
   async function getData() {
     response = await fetch("https://jsonplaceholder.typicode.com/users");
     responseJson = await response.json();
     console.log(responseJson);
 
     responseJson.forEach((user) => {
-      var element = document.createElement("p");
+      var element = document.createElement("div");
+      element.classList.add("nebitno");
       element.innerText = user.name;
-      main.appendChild(element);
+      mainn.appendChild(element);
     });
+
+    // responseJson.map((el) => {
+    //   return (
+    //     <div>
+    //       <h1>{el.name}</h1>
+    //     </div>
+    //   );
+    // });
   }
 
   getData();
 }
+function inputHandler() {
+  const input = document.getElementById("breskvica");
+  console.log("Sto si mucko kolu");
+  console.log(input.value);
+  input.value = "";
+}
+
+const forma = document.getElementById("forma");
+forma.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(forma);
+
+  const mail = document.getElementById("email");
+  const ime = document.getElementById("name");
+  const sifra = document.getElementById("password");
+  const korisnik = document.getElementById("username");
+
+  ja = {
+    email: mail.value,
+    name: ime.value,
+    password: sifra.value,
+    username: korisnik.value,
+  };
+  console.log(ja);
+
+  fetch("http://serene-fortress-45917.herokuapp.com/v1/auth/signup", {
+    method: "POST",
+    body: JSON.stringify(ja),
+  }).then((response) => {
+    console.log(response);
+  });
+});
+
+// function submiter() {
+//   preventReload();
+//   const el = document.getElementById("forma");
+//   console.log(el);
+// }

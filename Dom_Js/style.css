@@ -2,6 +2,25 @@
   border: 1px solid black;
   background-color: aqua;
 }
+#mainn {
+  background-color: red;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 .Nucci {
   font-size: 100px;
+  background-color: blue;
+}
+.nebitno {
+  background-color: darkorange;
+  width: 100px;
+  height: 100px;
+  /* 
+  margin-right: 10px;
+  margin-bottom: 10px; */
 }
