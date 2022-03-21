@@ -69,7 +69,7 @@ function klik() {
 }
 function inputHandler() {
   const input = document.getElementById("breskvica");
-  console.log("Sto si mucko kolu");
+  console.log("Sto sI mucko kolu");
   console.log(input);
   console.log(input.value);
 
