@@ -102,6 +102,8 @@ forma.addEventListener("submit", (e) => {
   });
 });
 
+console.log({} === {});
+
 // function submiter() {
 //   preventReload();
 //   const el = document.getElementById("forma");

@@ -679,3 +679,11 @@
 ///////////////////
 console.log("Morao sam da komitam ");
 console.log("Morao sam da komitam 2");
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < arr[i + 1]) {
+    console.log() true;
+  } else {
+    return false;
+  }
+}
