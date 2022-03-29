@@ -677,14 +677,25 @@
 //   return max;
 // }
 ///////////////////
-console.log("Morao sam da komitam ");
-console.log("Morao sam da komitam 2");
+// console.log("Morao sam da komitam ");
+// console.log("Morao sam da komitam 2");
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] < arr[i + 1]) {
-    console.log() true;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < arr[i + 1]) {
+//     console.log() true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log("Komitani komit");
+var arr = [1, false, 5, null, 6, 24, 0, 53, true, ""];
+// console.log(arr);
+var final = [];
+for (i = 0; i < arr.length; i++) {
+  console.log("error");
+  if (!arr[i]) {
   } else {
-    return false;
+    final.push(arr[i]);
   }
 }
-console.log("Komitani komit");
+console.log(final);
