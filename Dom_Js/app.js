@@ -43,6 +43,7 @@ function klik() {
     el.style.backgroundColor = "red";
     el.classList.add("Nucci");
   }
+
   mainn = document.getElementById("mainn");
   async function getData() {
     response = await fetch("https://jsonplaceholder.typicode.com/users");

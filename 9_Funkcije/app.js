@@ -436,3 +436,10 @@ getData();
 //   };
 //   setTimeout(log, 100);
 // }
+try.getData().catch{console.log("");}
+try{while(true)
+{
+
+
+
+  function nesto(){}.then{}.catch{}
